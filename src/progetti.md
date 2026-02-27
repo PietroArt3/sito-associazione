@@ -24,7 +24,7 @@ title: "Progetti"
   </div>
 
   <div style="flex: 1; min-width: 400px;">
-    <img src="/img/acceleratore.jpg" alt="Radioterapia Carpi" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <img src="/sito-associazione/img/acceleratore.jpg" alt="Radioterapia Carpi" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   </div>
 
 </div>
@@ -39,7 +39,7 @@ title: "Progetti"
 <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start;">
 
 <div style="flex: 1; min-width: 400px;">
-    <img src="/img/hospice.jpg" alt="Radioterapia Carpi" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <img src="/sito-associazione/img/hospice.jpg" alt="Radioterapia Carpi" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   </div>
   <div style="flex: 2; min-width: 300px;">
 La nostra Associazione è impegnata da anni, insieme ad ASP Comuni Modenesi Area Nord e AMO Nove Comuni Modenesi Area Nord per la <strong>costruzione di un Hospice territoriale</strong> per l’assistenza e la cura dei pazienti in fase avanzata di malattia che sorgerà a San Possidonio (Mo).
@@ -108,7 +108,7 @@ Tel. 3480389826 solo whatsapp ; Mail margralaz@gmail.com
   </div>
 
   <div style="flex: 1; min-width: 500px;">
-    <img src="/img/radioterapia.avif" alt="Radioterapia Carpi" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <img src="/sito-associazione/img/radioterapia.avif" alt="Radioterapia Carpi" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   </div>
 
 </div>

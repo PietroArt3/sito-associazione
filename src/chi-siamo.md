@@ -22,8 +22,8 @@ title: "Chi Siamo"
   </div>
 
   <div style="flex: 1; min-width: 400px;">
-    <img src="/img/foto_rosa.jpg" alt="I nostri volontari" style="width: 100%; border-radius: 12px; shadow: 0 4px 8px rgba(0,0,0,0.1);">
-    <img src="/img/foto_palco1.jpg" alt="I volontari" style="width: 100%; border-radius: 12px; shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <img src="/sito-associazione/img/foto_rosa.jpg" alt="I nostri volontari" style="width: 100%; border-radius: 12px; shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <img src="/sito-associazione/img/foto_palco1.jpg" alt="I volontari" style="width: 100%; border-radius: 12px; shadow: 0 4px 8px rgba(0,0,0,0.1);">
   </div>
 
 </div>

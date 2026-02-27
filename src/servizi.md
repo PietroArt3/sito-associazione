@@ -23,7 +23,7 @@ In caso di modifiche delle terapie comunicate direttamente al paziente o rinunci
   </div>
 
   <div style="flex: 1; min-width: 600px;">
-    <img src="/img/trasporti.avif" alt="Radioterapia Carpi" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <img src="/sito-associazione/img/trasporti.avif" alt="Radioterapia Carpi" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   </div>
 
 </div>
@@ -40,7 +40,7 @@ In caso di modifiche delle terapie comunicate direttamente al paziente o rinunci
 <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start;">
 
 <div style="flex: 1; min-width: 600px;">
-    <img src="/img/parrucche.avif" alt="Radioterapia Carpi" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <img src="/sito-associazione/img/parrucche.avif" alt="Radioterapia Carpi" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   </div>
   <div style="flex: 2; min-width: 300px;">
 La nostra Associazione è impegnata da anni, insieme ad ASP Comuni Modenesi Area Nord e AMO Nove Comuni Modenesi Area Nord per la costruzione di un Hospice territoriale per l’assistenza e la cura dei pazienti in fase avanzata di malattia che sorgerà a San Possidonio (Mo).
@@ -76,7 +76,7 @@ prevenzione.
   </div>
 
   <div style="flex: 1; min-width: 400px;">
-    <img src="/img/gruppo_cammino.avif" alt="Radioterapia Carpi" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <img src="/sito-associazione/img/gruppo_cammino.avif" alt="Radioterapia Carpi" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   </div>
 
 </div>
@@ -93,7 +93,7 @@ prevenzione.
 <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start;">
 
 <div style="flex: 1; min-width: 200px;">
-    <img src="/img/bomboniera.avif" alt="Radioterapia Carpi" style="width: 80%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <img src="/sito-associazione/img/bomboniera.avif" alt="Radioterapia Carpi" style="width: 80%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   </div>
   <div style="flex: 2; min-width: 300px;">
 Festeggia i tuoi momenti più belli con le Bomboniere d’AMOre!! Le bomboniere solidali di AMO, preparate con cura da una volontaria della Associazione, sono un gesto generoso che sostiene i progetti a favore dei pazienti oncologici. Per info, rivolgersi in segreteria AMO oppure al 335.5480177
