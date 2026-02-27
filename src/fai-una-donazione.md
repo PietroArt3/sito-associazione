@@ -66,6 +66,6 @@ Basta riportare il codice fiscale di AMO:
 **INSIEME CONTIAMO**
 <div style="flex: 1; min-width: 400px;">
 <div style="text-align: center;">
-    <img src="/img/5permille.jpg" alt="I nostri volontari" style="width: 80%; border-radius: 12px; shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <img src="/sito-associazione/img/5permille.jpg" alt="I nostri volontari" style="width: 80%; border-radius: 12px; shadow: 0 4px 8px rgba(0,0,0,0.1);">
   </div>
 </div>
