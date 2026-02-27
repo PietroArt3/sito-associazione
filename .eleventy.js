@@ -7,6 +7,7 @@ module.exports = function(eleventyConfig) {
         dir: {
             input: "src",    // Le tue bozze sono qui
             output: "public" // Il sito finito andrà qui
-        }
+        },
+        pathPrefix: "/sito-associazione/"
     };
 };
