@@ -2,7 +2,7 @@ module.exports = function(eleventyConfig) {
     // Copia CSS e Immagini nella cartella finale senza modificarli
     eleventyConfig.addPassthroughCopy("./src/css");
     eleventyConfig.addPassthroughCopy("./img");
-    eleventyConfig.addPassthroughCopy("src/doc");
+    eleventyConfig.addPassthroughCopy("doc");
 
     return {
         dir: {
