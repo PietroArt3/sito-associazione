@@ -87,7 +87,7 @@ L’ambulatorio del Benessere è attivo presso lo spazio palestra/piscina della 
 - Il venerdì dalle 9 alle 14 lo specialista medico ortopedico dr. Alberto Ferrari sarà presente per valutazione e avvio al percorso di attività motoria in collaborazione con Dott.ssa Laura Bernaroli e Dott.ssa Cecilia Zurlo (Medicina dello Sport);
 
 - Il venerdì dalle 14.30 alle 18 la dr.ssa Maria Grazia Lazzaretti sarà presente come medico volontario AMO per svolgere attività di informazione rispetto ai fattori di rischio della malattia oncologica, promozione dei corretti stili di vita, in collegamento con le attività di prevenzione terziaria promosse dal territorio e dall’associazione AMO odv Carpi.
-</strong>
+  </strong>
 
 
 Per accedere al Percorso Benessere è necessario l’invio da parte dell’oncologo di riferimento.

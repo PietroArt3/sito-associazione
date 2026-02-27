@@ -27,7 +27,6 @@ title: "Chi Siamo"
   </div>
 
 </div>
-
 <br><br>
 
 <div style="text-align: center;">
