@@ -15,14 +15,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
+          cache: 'npm'
+
       - name: Install dependencies
         run: npm install
+
       - name: Build Eleventy
-        run: npm run build
+        # Usiamo il percorso diretto ai file binari per evitare errori di permessi
+        run: ./node_modules/.bin/eleventy
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
