@@ -96,7 +96,7 @@ title: "Contatti"
 
   <div style="display: flex; align-items: center; margin-bottom: 10px;">
     <span style="height: 12px; width: 12px; background-color: #25D366; border-radius: 50%; display: inline-block; margin-right: 10px;"></span>
-    <a href="https://wa.me/393331234567" target="_blank" class="social-link">WhatsApp</a>
+    <a href="https://wa.me/3355480177" target="_blank" class="social-link">WhatsApp</a>
   </div>
 </div>
 
