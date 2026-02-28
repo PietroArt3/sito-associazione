@@ -64,22 +64,39 @@ title: "Contatti"
   </div>
 </div>
 
+<style>
+  /* Questo piccolo pezzo di codice rende i link interattivi */
+  .social-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s; /* Rende il cambio colore fluido */
+    border-bottom: 1px solid transparent; /* Prepara il bordo per l'hover */
+  }
+  
+  .social-link:hover {
+    color: #000; /* Diventa più scuro */
+    border-bottom: 1px solid #333; /* Appare una sottile linea sotto */
+    opacity: 0.8;
+  }
+</style>
+
 <div style="font-family: sans-serif; flex: 1; min-width: 200px;">
   <h3 style="margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 5px;">Social</h3>
 
   <div style="display: flex; align-items: center; margin-bottom: 10px;">
     <span style="height: 12px; width: 12px; background-color: #1877F2; border-radius: 50%; display: inline-block; margin-right: 10px;"></span>
-    <a href="https://facebook.com/amo.carpi" target="_blank" style="color: #333; text-decoration: none; font-weight: bold;">Facebook</a>
+    <a href="https://facebook.com/amo.carpi" target="_blank" class="social-link">Facebook</a>
   </div>
 
   <div style="display: flex; align-items: center; margin-bottom: 10px;">
     <span style="height: 12px; width: 12px; background-color: #E4405F; border-radius: 50%; display: inline-block; margin-right: 10px;"></span>
-    <a href="https://instagram.com/amo_carpi" target="_blank" style="color: #333; text-decoration: none; font-weight: bold;">Instagram</a>
+    <a href="https://instagram.com/amo_carpi" target="_blank" class="social-link">Instagram</a>
   </div>
 
   <div style="display: flex; align-items: center; margin-bottom: 10px;">
     <span style="height: 12px; width: 12px; background-color: #25D366; border-radius: 50%; display: inline-block; margin-right: 10px;"></span>
-    <a href="https://wa.me/393331234567" target="_blank" style="color: #333; text-decoration: none; font-weight: bold;">WhatsApp</a>
+    <a href="https://wa.me/393331234567" target="_blank" class="social-link">WhatsApp</a>
   </div>
 </div>
 
