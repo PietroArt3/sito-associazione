@@ -32,23 +32,22 @@ title: "Contatti"
     </p>
   </div>
 
-<div style="font-family: sans-serif; line-height: 2;">
+<div style="font-family: sans-serif; flex: 1; min-width: 200px;">
+  <h3 style="margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 5px;">Orari di Apertura</h3>
 
   <div style="display: flex; align-items: center; margin-bottom: 10px;">
-    <span style="height: 12px; width: 12px; background-color: #1877F2; border-radius: 50%; display: inline-block; margin-right: 10px;"></span>
-    <a href="https://facebook.com/amo.carpi" target="_blank" style="color: #333; text-decoration: none; font-weight: bold;">Facebook</a>
+    <span style="height: 12px; width: 12px; background-color: #333; border-radius: 50%; display: inline-block; margin-right: 10px;"></span>
+    <p style="margin: 0; color: #333;">
+      <strong style="width: 80px; display: inline-block;">Lun - Ven:</strong> 08:00 – 13:00
+    </p>
   </div>
 
   <div style="display: flex; align-items: center; margin-bottom: 10px;">
-    <span style="height: 12px; width: 12px; background-color: #E4405F; border-radius: 50%; display: inline-block; margin-right: 10px;"></span>
-    <a href="https://instagram.com/amo_carpi" target="_blank" style="color: #333; text-decoration: none; font-weight: bold;">Instagram</a>
+    <span style="height: 12px; width: 12px; background-color: #333; border-radius: 50%; display: inline-block; margin-right: 10px;"></span>
+    <p style="margin: 0; color: #333;">
+      <strong style="width: 80px; display: inline-block;">Sabato:</strong> 09:00 – 12:30
+    </p>
   </div>
-
-  <div style="display: flex; align-items: center; margin-bottom: 10px;">
-    <span style="height: 12px; width: 12px; background-color: #25D366; border-radius: 50%; display: inline-block; margin-right: 10px;"></span>
-    <a href="https://wa.me/3355480177" target="_blank" style="color: #333; text-decoration: none; font-weight: bold;">WhatsApp</a>
-  </div>
-
 </div>
 </div>
 
