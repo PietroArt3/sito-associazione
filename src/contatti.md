@@ -32,22 +32,23 @@ title: "Contatti"
     </p>
   </div>
 
-<div style="flex: 1; min-width: 200px;">
-    <div style="display: flex; gap: 15px; font-size: 1.8rem; margin-top: 10px;">
+<div style="font-family: sans-serif; line-height: 2;">
 
-      <a href="https://facebook.com/amo.carpi" target="_blank" style="color: #1877F2;">
-        <i class="fa-brands fa-facebook"></i>
-      </a>
+  <div style="display: flex; align-items: center; margin-bottom: 10px;">
+    <span style="height: 12px; width: 12px; background-color: #1877F2; border-radius: 50%; display: inline-block; margin-right: 10px;"></span>
+    <a href="https://facebook.com/amo.carpi" target="_blank" style="color: #333; text-decoration: none; font-weight: bold;">Facebook</a>
+  </div>
 
-      <a href="https://instagram.com/amo_carpi" target="_blank" style="color: #E4405F;">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
+  <div style="display: flex; align-items: center; margin-bottom: 10px;">
+    <span style="height: 12px; width: 12px; background-color: #E4405F; border-radius: 50%; display: inline-block; margin-right: 10px;"></span>
+    <a href="https://instagram.com/amo_carpi" target="_blank" style="color: #333; text-decoration: none; font-weight: bold;">Instagram</a>
+  </div>
 
-      <a href="https://wa.me/393331234567" target="_blank" style="color: #25D366;">
-        <i class="fa-brands fa-whatsapp"></i>
-      </a>
+  <div style="display: flex; align-items: center; margin-bottom: 10px;">
+    <span style="height: 12px; width: 12px; background-color: #25D366; border-radius: 50%; display: inline-block; margin-right: 10px;"></span>
+    <a href="https://wa.me/3355480177" target="_blank" style="color: #333; text-decoration: none; font-weight: bold;">WhatsApp</a>
+  </div>
 
-</div>
 </div>
 </div>
 
