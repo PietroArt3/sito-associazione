@@ -3,34 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} | Nome Associazione</title>
+    <title>{{ title }} | AMO Carpi</title>
     <link rel="stylesheet" href="/sito-associazione/css/style.css">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <a href="/sito-associazione/"><b>Notizie</b></a> |
-                <a href="/sito-associazione/chi-siamo">Chi Siamo</a> |
-                <a href="/sito-associazione/fai-una-donazione">Fai una Donazione</a> |
-                <a href="/sito-associazione/progetti">Progetti</a> |
-                <a href="/sito-associazione/servizi">Servizi</a> |
-                <a href="/sito-associazione/contatti">Contatti</a> |
-                <a href="/sito-associazione/trasparenza">Trasparenza</a> |
-                <a href="/sito-associazione/privacy">Privacy</a>
-            </nav>
-        </header>
-    <hr>
+
+    <style>
+        /* Banner 30 Anni */
+        .banner-30 {
+            background: linear-gradient(90deg, #004a99, #0066cc);
+            color: white;
+            padding: 8px 0;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        .cuore-animato {
+            display: inline-block;
+            color: #ff4d4d;
+            margin: 0 5px;
+            animation: battito 1.5s infinite;
+        }
+
+        @keyframes battito {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        /* Miglioramento Navigazione */
+        nav {
+            padding: 20px 0;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #0066cc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-family: sans-serif;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner-30">
+        ✨ 30 ANNI DI AMO <span class="cuore-animato">❤</span> INSIEME A VOI ✨
+    </div>
+
+    <header>
+        <nav>
+            <a href="/sito-associazione/"><b>Notizie</b></a> |
+            <a href="/sito-associazione/chi-siamo">Chi Siamo</a> |
+            <a href="/sito-associazione/fai-una-donazione">Donazioni</a> |
+            <a href="/sito-associazione/progetti">Progetti</a> |
+            <a href="/sito-associazione/servizi">Servizi</a> |
+            <a href="/sito-associazione/contatti">Contatti</a> |
+            <a href="/sito-associazione/trasparenza">Trasparenza</a> |
+            <a href="/sito-associazione/privacy">Privacy</a>
+        </nav>
+    </header>
+
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 0;">
 
     <main>
         {{ content | safe }}
     </main>
 
-    <hr>
-    <footer>
-        <p> Associazione Malati Oncologici ODV Carpi (MO)</p>
-          <div style="flex: 1; min-width: 400px;">
-          <img src="/sito-associazione/img/amo_logo.avif" alt="Logo AMO" style="width: 10%; border-radius: 12px; box-shadow: 0 0px 0px rgba(0,0,0,0.1);">
-          </div>
+    <footer style="margin-top: 50px; border-top: 1px solid #eee;">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 20px;">
+            <img src="/sito-associazione/img/amo_logo.avif" alt="Logo AMO" style="width: 80px; border-radius: 8px;">
+            <p style="margin: 0; color: #555;">
+                <strong>Associazione Malati Oncologici ODV Carpi (MO)</strong><br>
+                <span style="font-size: 0.9rem;">Sempre al fianco di chi ha bisogno.</span>
+            </p>
+        </div>
     </footer>
 </body>
 </html>
