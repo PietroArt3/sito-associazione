@@ -64,14 +64,15 @@ title: "Ultime Notizie"
         </div>
 
 <style>
-    /* Logica dello Slideshow */
+    /* Logica dello Slideshow per foto INTERE */
     .slideshow-container {
         position: relative;
         width: 100%;
-        height: 400px; /* Regola l'altezza in base alle tue foto */
+        /* Definisce la forma del box (es. 4:3). Regola se le foto sono più alte o larghe */
+        aspect-ratio: 4 / 3;
         border-radius: 12px;
         overflow: hidden;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        background-color: #f9f9f9; /* Colore di fondo se le foto non coprono tutto */
     }
 
     .slideshow-container img {
@@ -80,21 +81,21 @@ title: "Ultime Notizie"
         left: 0;
         width: 100%;
         height: 100%;
-        object-fit: cover; /* Mantiene le proporzioni ritagliando se necessario */
+        /* object-fit: contain mostra la foto INTERA senza tagliarla */
+        object-fit: contain;
         transition: opacity 1.5s ease-in-out;
         animation: sliderAnim 10s infinite;
     }
 
-    /* L'immagine 2 parte con un ritardo per alternarsi alla 1 */
     .img-2 {
         animation-delay: 5s !important;
     }
 
     @keyframes sliderAnim {
         0% { opacity: 0; }
-        10% { opacity: 1; }  /* Appare */
-        45% { opacity: 1; }  /* Resta visibile */
-        55% { opacity: 0; }  /* Scompare */
+        10% { opacity: 1; }
+        45% { opacity: 1; }
+        55% { opacity: 0; }
         100% { opacity: 0; }
     }
 </style>
@@ -126,7 +127,6 @@ title: "Ultime Notizie"
             <strong style="color: #004a99; display: block; margin-top: 10px; font-size: 1.2rem;">Donazione minima 10 euro</strong>
         </p>
     </div>
-
 </div>
 
 
