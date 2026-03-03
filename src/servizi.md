@@ -43,11 +43,13 @@ In caso di modifiche delle terapie comunicate direttamente al paziente o rinunci
     <img src="/sito-associazione/img/parrucche.avif" alt="Radioterapia Carpi" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   </div>
   <div style="flex: 2; min-width: 300px;">
-La nostra Associazione è impegnata da anni, insieme ad ASP Comuni Modenesi Area Nord e AMO Nove Comuni Modenesi Area Nord per la costruzione di un Hospice territoriale per l’assistenza e la cura dei pazienti in fase avanzata di malattia che sorgerà a San Possidonio (Mo).
+Amo mette a disposizione gratuitamente una parrucca o un turbante che può essere trattenuta per tutto il tempo delle terapie.
 
-L’Hospice rappresenta il necessario e fondamentale completamento della rete di cure palliative nel nostro territorio; un luogo accogliente per ospitare persone affette da malattie—non solo oncologica—, in fase avanzata, ma anche per dare sollievo alle loro famiglie che in alcuni momenti di gestione della malattia hanno bisogno di un luogo accogliente e di personale preparato.
 
-Per questo grande progetto è stata costituita la Fondazione Hospice San Martino ETS, della quale la nostra Associazione è uno dei tre soci fondatori. Amo ha sostenuto la Fondazione con un contributo finale di 200mila euro distribuito in 4 annualità e nel dicembre 2020 è stata versata la quarta e ultima rata di euro 50mila.
+Allo stesso tempo si ritirano parrucche in buono stato per rimetterle a disposizione di chi ha bisogno.
+
+
+Se invece si desidera acquistarla, in Amo si trova la modulistica per la richiesta di rimborso spese alla Regione Emilia Romagna.
   </div>
 </div>
 
