@@ -63,6 +63,42 @@ title: "Ultime Notizie"
             </div>
         </div>
 
+<style>
+    /* Logica dello Slideshow */
+    .slideshow-container {
+        position: relative;
+        width: 100%;
+        height: 400px; /* Regola l'altezza in base alle tue foto */
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .slideshow-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Mantiene le proporzioni ritagliando se necessario */
+        transition: opacity 1.5s ease-in-out;
+        animation: sliderAnim 10s infinite;
+    }
+
+    /* L'immagine 2 parte con un ritardo per alternarsi alla 1 */
+    .img-2 {
+        animation-delay: 5s !important;
+    }
+
+    @keyframes sliderAnim {
+        0% { opacity: 0; }
+        10% { opacity: 1; }  /* Appare */
+        45% { opacity: 1; }  /* Resta visibile */
+        55% { opacity: 0; }  /* Scompare */
+        100% { opacity: 0; }
+    }
+</style>
+
 <div class="primo-piano-container" style="flex: 2; min-width: 350px; max-width: 650px; background: #fff; border: 3px solid #004a99; border-radius: 20px; overflow: hidden; box-shadow: 0 12px 25px rgba(0,0,0,0.15);">
 
     <div style="background: #004a99; color: white; padding: 20px; text-align: center;">
@@ -73,13 +109,15 @@ title: "Ultime Notizie"
 
     <div style="padding: 20px 20px 10px 20px; text-align: center; background-color: #fff;">
         <h4 style="margin: 0; color: #004a99; font-size: 1.6rem; font-weight: 800; text-transform: uppercase;">
-            Sono arrivate le uova di Pasqua AMO!!
+            Uova di Pasqua AMO!!
         </h4>
     </div>
 
     <div style="padding: 0 15px; background-color: #fff;">
-        <img src="/sito-associazione/img/in_primo_piano/foto.jpeg" alt="In primo piano"
-             style="width: 100%; border-radius: 12px; display: block; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        <div class="slideshow-container">
+            <img src="/sito-associazione/img/in_primo_piano/foto.jpeg" alt="Foto 1" class="img-1">
+            <img src="/sito-associazione/img/in_primo_piano/foto2.jpeg" alt="Foto 2" class="img-2">
+        </div>
     </div>
 
     <div style="padding: 20px; text-align: center; background-color: #fff;">
