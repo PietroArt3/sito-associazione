@@ -59,52 +59,35 @@ Per questo grande progetto è stata costituita la <strong>Fondazione Hospice San
 <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start;">
 
   <div style="flex: 2; min-width: 300px;">
-Il numero di pazienti in vita dopo una diagnosi di tumore di anno in anno è sempre più alto, anche quando la malattia non è curabile. Per questo motivo è fondamentale affrontare gli esiti più o meno a lungo termine che una diagnosi di tumore comporta, inclusi gli effetti collaterali dopo le terapie oncologiche.
+Il numero di persone che convivono con una diagnosi di tumore cresce ogni anno. Per migliorare la qualità della vita e ridurre gli effetti collaterali delle terapie (stanchezza, disturbi dell'umore, dolori), nasce il Percorso Benessere. Questo approccio di oncologia integrata combina i trattamenti convenzionali con stili di vita salutari e attività complementari sicure.
 
-Le evidenze scientifiche attuali in <strong>sintonia con le esperienze di centri oncologici di eccellenza</strong>, hanno dimostrato il beneficio e il potenziale di approcci complementari quali l’adozione di stili di vita salutari (nutrizione e movimento in primis), l’agopuntura e alcune tecniche complementari mente-corpo nel ridurre la sofferenza del paziente oncologico, alleviare gli effetti collaterali dei trattamenti e migliorare le prospettive di lungo periodo. L’approccio proposto dall’oncologia integrata consiste quindi nell’impiego di questi trattamenti complementari in combinazione con i percorsi diagnostico-terapeutici convenzionali per la cura del tumore, al fine di offrire un supporto efficace e sicuro nell’ottica di una assistenza sanitaria globale.
+Il servizio si rivolge ai pazienti in follow-up presso la U.O. Medicina Oncologica Area Nord e offre:
 
-I principali effetti collaterali per i quali le terapie integrate vengono oggi utilizzate con buoni risultati nei pazienti oncologici sono: stanchezza e conseguente riduzione del movimento, disturbi dell’umore, sindrome menopausale e dolori muscolo-scheletrici.
+<strong>Attività Motoria Adattata:</strong> Esercizi personalizzati in piccoli gruppi (8 sedute settimanali in acqua o a secco) coordinati da un <strong>medico ortopedico</strong> e chinesiologhe esperte.
 
-L’obiettivo del Percorso Benessere è quello di migliorare salute e qualità della vita, riducendo gli effetti collaterali a medio e lungo termine delle terapie oncologiche e rafforzando il ruolo attivo della persona nel suo percorso verso il recupero della salute.
-
-Il Percorso Benessere si rivolge ai pazienti oncologici in follow-up clinico presso la U.O Medicina Oncologica Area Nord e che presentano:
-ridotta attività motoria in seguito ai trattamenti oncologici eseguiti, astenia, dolore neuropatico
-stili di vita a rischio per sindrome metabolica, stress, fumo, alcol
-sintomatologia moderato-severa da terapie endocrine (sindrome climaterica, dolori muscolo-scheletrici).
-
-Il Percorso Benessere <strong>offre i seguenti servizi</strong>:
-
-Percorso di Attività Motoria Adattata Fare attività fisica previene l'insorgenza di numerose malattie e diverse forme di tumore e migliora la qualità di vita anche attraverso un sensibile miglioramento dell’umore. L’attività Motoria Adattata è una tipologia di esercizio fisico, non sanitario, bilanciato ed attento alla reale situazione fisica del paziente. Il programma di lavoro è redatto dal medico ortopedico in collaborazione con i tecnici delle attività motorie preventive e adattate (Chinesiologhe AMPA) e viene praticato in ambito non medico a ‘secco’ o in acqua in piccoli gruppi formati esclusivamente da pazienti oncologici per 8 sedute a cadenza settimanale. L’attività motoria verte in esercizi di mobilità articolare, rinforzo muscolare, lieve/moderato esercizio aerobico, esercizi di equilibrio, allungamento globale.
-
-Consulenza sugli stili di vita ed alfabetizzazione sanitaria Nei paesi con stile di vita occidentale, la percentuale dei tumori attribuibili a cause modificabili si stima tra il 35 e il 60%: peso corporeo, attività fisica e alimentazione scorretta le cause principali. Nell’ambulatorio viene offerta attività di ascolto e consulenza personalizzata per promuovere un adeguato stile di vita verso l’abolizione di condotte a rischio per la vita stessa e prevenire malattie croniche come il diabete, l’ipertensione e l’obesità, che riducono la spettanza vitale e contribuiscono ad aumentare il rischio di ripresa di malattia oncologica.
-
-Orari e Sede
-
-<br>
-
-L’ambulatorio del Benessere è attivo presso lo spazio palestra/piscina della Medicina dello Sport di Carpi secondo il seguente calendario
-<strong>
-- Il venerdì dalle 9 alle 14 lo specialista medico ortopedico dr. Alberto Ferrari sarà presente per valutazione e avvio al percorso di attività motoria in collaborazione con Dott.ssa Laura Bernaroli e Dott.ssa Cecilia Zurlo (Medicina dello Sport);
-
-- Il venerdì dalle 14.30 alle 18 la dr.ssa Maria Grazia Lazzaretti sarà presente come medico volontario AMO per svolgere attività di informazione rispetto ai fattori di rischio della malattia oncologica, promozione dei corretti stili di vita, in collegamento con le attività di prevenzione terziaria promosse dal territorio e dall’associazione AMO odv Carpi.
-  </strong>
+<strong>Consulenza sugli Stili di Vita:</strong> Attività di ascolto e <strong>alfabetizzazione sanitaria</strong> per correggere abitudini a rischio (alimentazione, fumo, sedentarietà) e prevenire malattie croniche o recidive.
 
 
-Per accedere al Percorso Benessere è necessario l’invio da parte dell’oncologo di riferimento.
+L’Ambulatorio del Benessere è attivo presso la <strong>Medicina dello Sport di Carpi</strong>:
+
+<strong>Il Venerdì (ore 9:00 - 14:00):</strong> Valutazione e avvio al percorso motorio con il <strong>dr. Alberto Ferrari</strong> (medico ortopedico) in collaborazione con la <strong>Dott.ssa Laura Bernaroli</strong> e la <strong>Dott.ssa Cecilia Zurlo</strong>.
+
+<strong>Il Venerdì (ore 14:30 - 18:00):</strong> Attività di informazione e promozione stili di vita con la <strong>dr.ssa Maria Grazia Lazzaretti</strong> (medico volontario AMO).
 
 
+L'accesso al percorso avviene esclusivamente su <strong>invio da parte dell'oncologo di riferimento</strong>.
 
-Informazioni:
+<strong>Informazioni Segreteria Medicina Oncologica:</strong>
 
-Segreteria di Medicina Oncologica
+Telefono: <strong>059 659294</strong> oppure <strong>059 659981</strong>
 
-059659294, 059659981  Lun-Venerdì dalle 08-10
+Orari: dal lunedì al venerdì, <strong>dalle ore 08:00 alle 10:00</strong>.
 
-Per Ascolto/consulenza
+<strong>Per Ascolto e Consulenza (Dr.ssa Maria Grazia Lazzaretti):</strong>
 
-Dr.ssa Maria Grazia Lazzaretti
+Telefono: <strong>348 0389826</strong> (disponibile <strong>solo via WhatsApp</strong>)
 
-Tel. 3480389826 solo whatsapp ; Mail margralaz@gmail.com
+Email: <strong>margralaz@gmail.com</strong>
   </div>
 
   <div style="flex: 1; min-width: 500px;">
