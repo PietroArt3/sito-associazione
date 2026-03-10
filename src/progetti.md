@@ -3,14 +3,26 @@ layout: base.njk
 title: "Progetti"
 ---
 
-# Cosa facciamo
+<style>
+    /* Questo assicura che su mobile le colonne vadano una sotto l'altra correttamente */
+    @media (max-width: 768px) {
+        .progetto-flex {
+            gap: 20px !important;
+        }
+        .progetto-testo, .progetto-img {
+            min-width: 100% !important; /* Forza la larghezza piena su mobile */
+        }
+    }
+</style>
+
+<h1>Cosa facciamo</h1>
 <br>
 
 ## Aggiornamento Radioterapia
 
-<div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start;">
+<div class="progetto-flex" style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start;">
 
-  <div style="flex: 2; min-width: 300px;">
+  <div class="progetto-testo" style="flex: 2; min-width: 300px;">
     Con l’installazione del nuovo sistema di <strong>Gating respiratorio</strong> si è completato 
     <strong>l’aggiornamento dell’acceleratore Lineare della Radioterapia Oncologica di Carpi</strong> 
     rinnovato già a febbraio 2021 grazie all’impegno di Azienda USL, Azienda Ospedaliero-Universitaria 
@@ -23,11 +35,12 @@ title: "Progetti"
     il cambio dei colori ambientali.
   </div>
 
-  <div style="flex: 1; min-width: 400px;">
-    <img src="/sito-associazione/img/acceleratore.jpg" alt="Radioterapia Carpi" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <div class="progetto-img" style="flex: 1; min-width: 300px; max-width: 100%;">
+    <img src="/sito-associazione/img/acceleratore.jpg" alt="Radioterapia Carpi" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   </div>
 
 </div>
+
 <br>
 <hr style="border: 0; height: 1px; background: #ddd; margin: 40px 0;">
 <br>
@@ -36,17 +49,19 @@ title: "Progetti"
 <h2>Hospice</h2>
 </div>
 
-<div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start;">
+<div class="progetto-flex" style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start;">
 
-<div style="flex: 1; min-width: 400px;">
-    <img src="/sito-associazione/img/hospice.jpg" alt="Radioterapia Carpi" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <div class="progetto-img" style="flex: 1; min-width: 300px; max-width: 100%;">
+    <img src="/sito-associazione/img/hospice.jpg" alt="Hospice" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   </div>
-  <div style="flex: 2; min-width: 300px;">
+
+  <div class="progetto-testo" style="flex: 2; min-width: 300px;">
 La nostra Associazione è impegnata da anni, insieme ad ASP Comuni Modenesi Area Nord e AMO Nove Comuni Modenesi Area Nord per la <strong>costruzione di un Hospice territoriale</strong> per l’assistenza e la cura dei pazienti in fase avanzata di malattia che sorgerà a San Possidonio (Mo).
 
 L’Hospice rappresenta il <strong>necessario e fondamentale</strong> completamento della rete di cure palliative nel nostro territorio; un luogo accogliente per ospitare persone affette da malattie—non solo oncologica—, in fase avanzata, ma anche per dare sollievo alle loro famiglie che in alcuni momenti di gestione della malattia hanno bisogno di un luogo accogliente e di personale preparato.
 
 Per questo grande progetto è stata costituita la <strong>Fondazione Hospice San Martino ETS</strong>, della quale la nostra Associazione è uno dei tre soci fondatori. Amo ha sostenuto la Fondazione con un contributo finale di 200mila euro distribuito in 4 annualità e nel dicembre 2020 è stata versata la quarta e ultima rata di euro 50mila.
+
   </div>
 </div>
 
@@ -56,9 +71,9 @@ Per questo grande progetto è stata costituita la <strong>Fondazione Hospice San
 
 ## Ambulatorio del Benessere
 
-<div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start;">
+<div class="progetto-flex" style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start;">
 
-  <div style="flex: 2; min-width: 300px;">
+  <div class="progetto-testo" style="flex: 2; min-width: 300px;">
 Il numero di persone che convivono con una diagnosi di tumore cresce ogni anno. Per migliorare la qualità della vita e ridurre gli effetti collaterali delle terapie (stanchezza, disturbi dell'umore, dolori), nasce il Percorso Benessere. Questo approccio di oncologia integrata combina i trattamenti convenzionali con stili di vita salutari e attività complementari sicure.
 
 Il servizio si rivolge ai pazienti in follow-up presso la U.O. Medicina Oncologica Area Nord e offre:
@@ -87,12 +102,11 @@ Orari: dal lunedì al venerdì, <strong>dalle ore 08:00 alle 10:00</strong>.
 
 Telefono: <strong>348 0389826</strong> (disponibile <strong>solo via WhatsApp</strong>)
 
-Email: <strong>margralaz@gmail.com</strong>
-  </div>
+Email: <strong>margralaz@gmail.com</strong>  </div>
 
-  <div style="flex: 1; min-width: 500px;">
-    <img src="/sito-associazione/img/radioterapia.avif" alt="Radioterapia Carpi" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <div class="progetto-img" style="flex: 1; min-width: 300px; max-width: 100%;">
+    <img src="/sito-associazione/img/radioterapia.avif" alt="Ambulatorio" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   </div>
 
 </div>
-
+</div>
