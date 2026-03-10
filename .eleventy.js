@@ -16,23 +16,29 @@ module.exports = function(eleventyConfig) {
     module.exports = function(eleventyConfig) {
 
         eleventyConfig.addGlobalData("datiPrimoPiano", () => {
-            // Specifica il percorso corretto della cartella
-            const cartella = path.join(__dirname, "img/in_primo_piano/");
+            // IMPORTANTE: Se i tuoi file sono in una sottocartella (es. 'src/img'),
+            // scrivi path.join(__dirname, "src", "img", "in_primo_piano")
+            const cartella = path.join(__dirname, "img", "in_primo_piano");
 
-            try {
-                return {
-                    // Legge i file se esistono
-                    titolo: fs.existsSync(path.join(cartella, "titolo.txt"))
-                        ? fs.readFileSync(path.join(cartella, "titolo.txt"), "utf8").trim()
-                        : null,
-                    testo: fs.existsSync(path.join(cartella, "testo.txt"))
-                        ? fs.readFileSync(path.join(cartella, "testo.txt"), "utf8").trim()
-                        : null
-                };
-            } catch (e) {
-                // In caso di errore critico (es. cartella mancante), restituisce tutto vuoto
-                return { titolo: null, testo: null };
+            // Verifichiamo se i file esistono fisicamente
+            const pathTitolo = path.join(cartella, "titolo.txt");
+            const pathTesto = path.join(cartella, "testo.txt");
+
+            let titoloContenuto = null;
+            let testoContenuto = null;
+
+            if (fs.existsSync(pathTitolo)) {
+                titoloContenuto = fs.readFileSync(pathTitolo, "utf8").trim();
             }
+
+            if (fs.existsSync(pathTesto)) {
+                testoContenuto = fs.readFileSync(pathTesto, "utf8").trim();
+            }
+
+            return {
+                titolo: titoloContenuto,
+                testo: testoContenuto
+            };
         });
 
         eleventyConfig.addPassthroughCopy("img");
