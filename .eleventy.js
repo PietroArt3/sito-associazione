@@ -4,12 +4,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./img");
     eleventyConfig.addPassthroughCopy("doc");
 
-    return {
-        dir: {
-            input: "src",    // Le tue bozze sono qui
-            output: "public" // Il sito finito andrà qui
-        },
-    };
     const fs = require("fs");
     const path = require("path");
 
@@ -51,5 +45,12 @@ module.exports = function(eleventyConfig) {
                 output: "_site"
             }
         };
+    };
+
+    return {
+        dir: {
+            input: "src",    // Le tue bozze sono qui
+            output: "public" // Il sito finito andrà qui
+        },
     };
 };
