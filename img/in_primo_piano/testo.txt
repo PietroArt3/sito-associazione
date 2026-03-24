@@ -1,5 +1,25 @@
-Sono arrivate le Uova di Pasqua al cioccolato fondente e al latte 😋🍫! Un dono goloso per sostenere le attività di AMO. Le trovate tutte le mattine presso il nostro ufficio e nell'atrio dell'Ospedale di Carpi nelle mattine del 9-12-17-19-23-25 marzo e 2 aprile. <br> <strong style="color: #004a99; display: block; margin-top: 10px; font-size: 1.2rem;">Donazione minima 10 euro</strong>
+Sono arrivate le Uova di Pasqua al cioccolato fondente e al latte 😋🍫! Un dono goloso per sostenere le attività di AMO. Le trovate tutte le mattine presso il nostro ufficio e nell'atrio dell'Ospedale di Carpi nelle mattine del 9-12-17-19-23-25 marzo e 2 aprile.
+<br>
+<strong style="color: #004a99; display: block; margin-top: 15px; font-size: 1.3rem;">Donazione minima 10 euro</strong>
+
 <a href="/sito-associazione/img/in_primo_piano/giornalino.pdf" download
-   style="display: inline-flex; align-items: center; justify-content: center; padding: 10px 20px; background-color: #5183e9; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; gap: 10px; line-height: 1;">
-  <i class="fa-solid fa-file-pdf"></i> Clicca qua per leggerlo!
+   onmouseover="this.style.backgroundColor='#3a6ad4'; this.style.transform='scale(1.05)';"
+   onmouseout="this.style.backgroundColor='#5183e9'; this.style.transform='scale(1)';"
+   style="display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 14px 28px;
+          margin-top: 15px;
+          background-color: #5183e9;
+          color: white;
+          text-decoration: none;
+          border-radius: 8px;
+          font-weight: bold;
+          font-size: 1.1rem;
+          gap: 12px;
+          line-height: 1;
+          transition: all 0.2s ease;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+          cursor: pointer;">
+  <i class="fa-solid fa-file-pdf" style="font-size: 1.3rem;"></i> Clicca qua per leggerlo!
 </a>
