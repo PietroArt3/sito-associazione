@@ -1,21 +1,5 @@
 Sono arrivate le Uova di Pasqua al cioccolato fondente e al latte 😋🍫! Un dono goloso per sostenere le attività di AMO. Le trovate tutte le mattine presso il nostro ufficio e nell'atrio dell'Ospedale di Carpi nelle mattine del 9-12-17-19-23-25 marzo e 2 aprile. <br> <strong style="color: #004a99; display: block; margin-top: 10px; font-size: 1.2rem;">Donazione minima 10 euro</strong>
 <a href="/sito-associazione/img/in_primo_piano/giornalino.pdf" download
-   style="display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          padding: 15px 30px;
-          background: #ff9800; /* Colore vivace che stacca dal blu del sito */
-          color: white;
-          text-decoration: none;
-          border-radius: 50px; /* Arrotondato è più moderno e invita al click */
-          font-weight: 800;
-          font-size: 1.1rem;
-          gap: 12px;
-          line-height: 1;
-          box-shadow: 0 4px 15px rgba(255, 152, 0, 0.4); /* Ombra colorata per farlo "galleggiare" */
-          transition: all 0.3s ease;
-          margin-top: 15px;
-          border: 2px solid rgba(255,255,255,0.2);">
-  <i class="fa-solid fa-file-pdf" style="font-size: 1.3rem;"></i>
-  SCARICA IL GIORNALINO
+   style="display: inline-flex; align-items: center; justify-content: center; padding: 10px 20px; background-color: #5183e9; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; gap: 10px; line-height: 1;">
+  <i class="fa-solid fa-file-pdf"></i> Clicca qua per leggerlo!
 </a>
