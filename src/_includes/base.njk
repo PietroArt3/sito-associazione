@@ -7,32 +7,33 @@
     <title>{{ title }} | AMO Carpi</title>
 
     <style>
-        /* RESET E BASE */
+        /* RESET BASE */
         body {
             margin: 0;
             padding: 0;
             font-family: sans-serif;
-            line-height: 1.6;
+            line-height: 1.5;
             color: #333;
+            background-color: white;
         }
 
-        /* BANNER - Sempre a tutta larghezza */
+        /* BANNER - Compatto */
         .banner-30 {
             width: 100%;
             background: linear-gradient(90deg, #004a99, #0066cc);
             color: white;
-            padding: 12px 0; /* Più alto */
+            padding: 6px 0; /* Ridotto */
             overflow: hidden;
             white-space: nowrap;
             font-weight: bold;
-            font-size: 1rem; /* Font più grande */
+            font-size: 0.85rem;
             text-transform: uppercase;
         }
 
         .scorrimento {
             display: inline-block;
             padding-left: 100%;
-            animation: scorri 20s linear infinite;
+            animation: scorri 22s linear infinite;
         }
 
         @keyframes scorri {
@@ -40,25 +41,25 @@
             100% { transform: translateX(-100%); }
         }
 
-        /* HEADER - Grande e centrato */
+        /* HEADER - Sottile e bilanciato */
         header {
             width: 100%;
             background-color: white;
             border-bottom: 1px solid #eee;
-            padding: 20px 0; /* Più respiro sopra e sotto */
+            padding: 8px 0; /* SPAZIO RIDOTTO AL MINIMO */
         }
 
         .header-container {
-            max-width: 1300px; /* Molto largo per non sembrare piccolo */
+            max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: 120px 1fr 120px; /* Colonne laterali più larghe per bilanciare */
+            grid-template-columns: 100px 1fr 100px; /* Bilanciamento logo/spazio vuoto */
             align-items: center;
-            padding: 0 30px;
+            padding: 0 20px;
         }
 
         .logo-img {
-            height: 65px; /* Logo più grande, come lo volevi */
+            height: 50px; /* DIMENSIONE LOGO RIDOTTA */
             width: auto;
             display: block;
         }
@@ -67,24 +68,25 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 25px; /* Più spazio tra i link */
+            gap: 18px; /* Spazio tra i link più sobrio */
         }
 
         nav a {
             text-decoration: none;
-            color: #333;
-            font-size: 1.1rem; /* Testo menu più grande */
+            color: #444;
+            font-size: 0.95rem; /* Font leggibile ma non enorme */
             font-weight: 500;
             transition: color 0.3s;
         }
 
         nav a:hover { color: #0066cc; }
+        nav a b { color: #0066cc; }
 
-        /* CONTENUTO PRINCIPALE - Largo e leggibile */
+        /* MAIN - Ampio ma centrato */
         main {
-            max-width: 1100px; /* Aumentato per non far sembrare il sito "stretto" */
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 50px 30px;
+            padding: 30px 20px; /* Spazio ridotto tra header e contenuto */
         }
 
         /* FOOTER */
@@ -92,29 +94,25 @@
             width: 100%;
             background-color: #f9f9f9;
             border-top: 1px solid #eee;
-            padding: 50px 20px;
+            padding: 30px 20px;
             text-align: center;
-        }
-
-        .footer-content {
-            max-width: 1100px;
-            margin: 0 auto;
+            margin-top: 50px;
         }
 
         .footer-content p {
-            font-size: 1rem;
-            margin: 10px 0;
+            font-size: 0.95rem;
+            margin: 5px 0;
+            color: #555;
         }
 
-        /* RESPONSIVE */
-        @media (max-width: 900px) {
+        /* MOBILE */
+        @media (max-width: 800px) {
             .header-container {
                 display: flex;
                 flex-direction: column;
-                gap: 20px;
+                gap: 10px;
             }
             .header-spacer { display: none; }
-            nav { gap: 15px; }
         }
     </style>
 </head>
@@ -152,11 +150,9 @@
 
     <footer>
         <div class="footer-content">
-            <p style="font-size: 1.2rem;"><strong>Associazione Malati Oncologici ODV Carpi (MO)</strong></p>
-            <p style="color: #666;">
-                Via G. Molinari 2, Ospedale Ramazzini, Carpi MO | Tel: 059 6132038<br>
-                Email: amocarpi.odv@gmail.com
-            </p>
+            <p><strong>Associazione Malati Oncologici ODV Carpi (MO)</strong></p>
+            <p>Via G. Molinari 2, Ospedale Ramazzini, Carpi MO | Tel: 059 6132038</p>
+            <p>Email: amocarpi.odv@gmail.com</p>
         </div>
     </footer>
 
