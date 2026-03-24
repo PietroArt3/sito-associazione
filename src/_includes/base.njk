@@ -17,23 +17,24 @@
             background-color: white;
         }
 
-        /* BANNER - Compatto */
+        /* BANNER - Ingrandito come richiesto */
         .banner-30 {
             width: 100%;
             background: linear-gradient(90deg, #004a99, #0066cc);
             color: white;
-            padding: 6px 0; /* Ridotto */
+            padding: 12px 0; /* Aumentato spessore */
             overflow: hidden;
             white-space: nowrap;
             font-weight: bold;
-            font-size: 0.85rem;
+            font-size: 1.1rem; /* Carattere più grande */
             text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .scorrimento {
             display: inline-block;
             padding-left: 100%;
-            animation: scorri 22s linear infinite;
+            animation: scorri 25s linear infinite;
         }
 
         @keyframes scorri {
@@ -41,52 +42,63 @@
             100% { transform: translateX(-100%); }
         }
 
-        /* HEADER - Sottile e bilanciato */
+        /* HEADER */
         header {
             width: 100%;
             background-color: white;
             border-bottom: 1px solid #eee;
-            padding: 15px 0; /* SPAZIO RIDOTTO AL MINIMO */
+            padding: 10px 0;
         }
 
         .header-container {
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: 100px 1fr 100px; /* Bilanciamento logo/spazio vuoto */
+            grid-template-columns: 100px 1fr 100px;
             align-items: center;
             padding: 0 20px;
         }
 
         .logo-img {
-            height: 50px; /* DIMENSIONE LOGO RIDOTTA */
+            height: 50px;
             width: auto;
             display: block;
         }
 
+        /* MENU - Scritte più grandi */
         nav {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 18px; /* Spazio tra i link più sobrio */
+            gap: 22px;
         }
 
         nav a {
             text-decoration: none;
-            color: #444;
-            font-size: 0.95rem; /* Font leggibile ma non enorme */
+            color: #555;
+            font-size: 1.1rem; /* Ingrandite scritte menu */
             font-weight: 500;
-            transition: color 0.3s;
+            transition: all 0.3s;
+            padding: 5px 2px;
+            border-bottom: 2px solid transparent;
         }
 
-        nav a:hover { color: #0066cc; }
-        nav a b { color: #0066cc; }
+        nav a:hover {
+            color: #0066cc;
+        }
 
-        /* MAIN - Ampio ma centrato */
+        /* CLASSE PER TAB ATTIVO */
+        nav a.active {
+            color: #0066cc !important;
+            font-weight: 800 !important;
+            border-bottom: 2px solid #0066cc;
+        }
+
+        /* MAIN - Ridotto padding superiore per avvicinare contenuti */
         main {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 30px 20px; /* Spazio ridotto tra header e contenuto */
+            padding: 0 20px 30px 20px;
         }
 
         /* FOOTER */
@@ -110,9 +122,11 @@
             .header-container {
                 display: flex;
                 flex-direction: column;
-                gap: 10px;
+                gap: 15px;
             }
             .header-spacer { display: none; }
+            nav { gap: 12px; }
+            nav a { font-size: 1rem; }
         }
     </style>
 </head>
@@ -120,7 +134,7 @@
 
     <div class="banner-30">
         <div class="scorrimento">
-            30 ANNI DI AMO ❤️ 30 ANNI DI AMO ❤️ 30 ANNI DI AMO ️️ ❤️ 30 ANNI DI AMO ❤️ 30 ANNI DI AMO ❤️ 30 ANNI DI AMO ❤️ 30 ANNI DI AMO ❤️ 30 ANNI DI AMO ❤️ 30 ANNI DI AMO
+            30 ANNI DI AMO ❤️ 30 ANNI DI AMO ❤️ 30 ANNI DI AMO ❤️ 30 ANNI DI AMO ❤️ 30 ANNI DI AMO ❤️ 30 ANNI DI AMO ❤️ 30 ANNI DI AMO ❤️ 30 ANNI DI AMO ❤️ 30 ANNI DI AMO
         </div>
     </div>
 
@@ -130,14 +144,14 @@
                 <img src="/sito-associazione/img/amo_logo.avif" alt="Logo AMO" class="logo-img">
             </a>
 
-            <nav>
-                <a href="/sito-associazione/"><b>Notizie</b></a>
-                <a href="/sito-associazione/chi-siamo">Chi Siamo</a>
-                <a href="/sito-associazione/fai-una-donazione">Donazioni</a>
-                <a href="/sito-associazione/progetti">Progetti</a>
-                <a href="/sito-associazione/servizi">Servizi</a>
-                <a href="/sito-associazione/contatti">Contatti</a>
-                <a href="/sito-associazione/trasparenza">Trasparenza</a>
+            <nav id="main-nav">
+                <a href="/sito-associazione/">Notizie</a>
+                <a href="/sito-associazione/chi-siamo/">Chi Siamo</a>
+                <a href="/sito-associazione/fai-una-donazione/">Donazioni</a>
+                <a href="/sito-associazione/progetti/">Progetti</a>
+                <a href="/sito-associazione/servizi/">Servizi</a>
+                <a href="/sito-associazione/contatti/">Contatti</a>
+                <a href="/sito-associazione/trasparenza/">Trasparenza</a>
             </nav>
 
             <div class="header-spacer"></div>
@@ -155,6 +169,23 @@
             <p>Email: amocarpi.odv@gmail.com</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const currentUrl = window.location.pathname;
+            const navLinks = document.querySelectorAll('#main-nav a');
+
+            navLinks.forEach(link => {
+                const linkPath = link.getAttribute('href');
+
+                // Se l'URL corrente contiene il percorso del link, aggiungi la classe active
+                // Gestisce sia il caso della home "/" che le altre pagine
+                if (currentUrl === linkPath || (linkPath !== "/sito-associazione/" && currentUrl.includes(linkPath))) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
