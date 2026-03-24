@@ -5,125 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/sito-associazione/img/favicon.png">
     <title>{{ title }} | AMO Carpi</title>
-    <link rel="stylesheet" href="/sito-associazione/css/style.css">
 
-<style>
-    /* Reset base per evitare margini indesiderati */
-    body { margin: 0; font-family: sans-serif; }
-
-    /* Banner 30 Anni con scorrimento */
-    .banner-30 {
-        background: linear-gradient(90deg, #004a99, #0066cc);
-        color: white;
-        padding: 8px 0;
-        overflow: hidden;
-        white-space: nowrap;
-        font-weight: bold;
-        letter-spacing: 2px;
-        font-size: 0.8rem;
-        text-transform: uppercase;
-        display: flex;
-        align-items: center;
-    }
-
-    .scorrimento {
-        display: inline-block;
-        padding-left: 100%;
-        animation: scorri 20s linear infinite;
-    }
-
-    @keyframes scorri {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-100%); }
-    }
-
-    .cuore-animato {
-        display: inline-block;
-        color: #ff4d4d;
-        margin: 0 10px;
-        animation: battito 1.5s infinite;
-    }
-
-    @keyframes battito {
-        0% { transform: scale(1); }
-        50% { transform: scale(1.3); }
-        100% { transform: scale(1); }
-    }
-
-    /* Header Compatto con Logo a Sinistra e Menu Centrato */
-    header {
-        background-color: white;
-        border-bottom: 1px solid #eee;
-        padding: 10px 20px;
-    }
-
-    .header-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 100px 1fr 100px; /* Logo 100px | Menu flessibile | Vuoto 100px */
-        align-items: center;
-    }
-
-    .logo-img {
-        height: 45px; /* Logo molto discreto */
-        width: auto;
-        display: block;
-        transition: opacity 0.3s;
-    }
-
-    .logo-img:hover { opacity: 0.8; }
-
-    nav {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    nav a {
-        text-decoration: none;
-        color: #444;
-        font-size: 0.9rem;
-        font-weight: 500;
-        padding: 5px 0;
-        transition: color 0.3s;
-    }
-
-    nav a:hover { color: #0066cc; }
-    nav a b { color: #0066cc; } /* Evidenzia 'Notizie' */
-
-    /* Ottimizzazione Mobile */
-    @media (max-width: 850px) {
-        .header-container {
+    <style>
+        /* 1. RESET GENERALE: Centra il corpo del sito */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            align-items: center; /* Forza il centraggio dei figli diretti */
+            min-height: 100vh;
         }
-        .header-spacer { display: none; }
-    }
 
-    main {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 30px 20px;
-        line-height: 1.6;
-    }
+        /* 2. BANNER: Occupa tutta la larghezza */
+        .banner-30 {
+            width: 100%;
+            background: linear-gradient(90deg, #004a99, #0066cc);
+            color: white;
+            padding: 8px 0;
+            overflow: hidden;
+            white-space: nowrap;
+            font-weight: bold;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
 
-    footer {
-        text-align: center;
-        padding: 30px 20px;
-        background-color: #f9f9f9;
-        border-top: 1px solid #eee;
-        margin-top: 40px;
-    }
-</style>
+        .scorrimento {
+            display: inline-block;
+            padding-left: 100%;
+            animation: scorri 20s linear infinite;
+        }
+
+        @keyframes scorri {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* 3. HEADER: Centrato con Grid */
+        header {
+            width: 100%;
+            background-color: white;
+            border-bottom: 1px solid #eee;
+        }
+
+        .header-container {
+            max-width: 1100px;
+            margin: 0 auto; /* CENTRA L'HEADER */
+            display: grid;
+            grid-template-columns: 80px 1fr 80px; /* Logo e Spacer bilanciati */
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo-img {
+            height: 45px;
+            width: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center; /* CENTRA IL MENU NELLO SPAZIO RIMASTO */
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #444;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* 4. MAIN: Il cuore delle tue notizie */
+        main {
+            width: 100%;
+            max-width: 850px; /* Larghezza ideale per leggere notizie */
+            margin: 0 auto;  /* CENTRA IL CONTENUTO */
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        /* 5. FOOTER: Centrato */
+        footer {
+            width: 100%;
+            background-color: #f9f9f9;
+            border-top: 1px solid #eee;
+            padding: 40px 20px;
+            margin-top: auto; /* Spinge il footer in fondo se c'è poco testo */
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 800px) {
+            .header-container {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            .header-spacer { display: none; }
+        }
+    </style>
 </head>
 <body>
 
     <div class="banner-30">
         <div class="scorrimento">
-            30 ANNI DI AMO <span class="cuore-animato">❤</span> 30 ANNI DI AMO <span class="cuore-animato">❤</span> 30 ANNI DI AMO
+            30 ANNI DI AMO ❤ 30 ANNI DI AMO ❤ 30 ANNI DI AMO
         </div>
     </div>
 
@@ -141,11 +133,9 @@
                 <a href="/sito-associazione/servizi">Servizi</a>
                 <a href="/sito-associazione/contatti">Contatti</a>
                 <a href="/sito-associazione/trasparenza">Trasparenza</a>
-                <a href="/sito-associazione/privacy">Privacy</a>
             </nav>
 
-            <div class="header-spacer"></div>
-        </div>
+            <div class="header-spacer"></div> </div>
     </header>
 
     <main>
@@ -153,12 +143,11 @@
     </main>
 
     <footer>
-        <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 15px;">
-            <img src="/sito-associazione/img/amo_logo.avif" alt="Logo AMO" style="width: 50px; opacity: 0.6;">
-            <p style="margin: 0; color: #666; font-size: 0.85rem;">
-                <strong>Associazione Malati Oncologici ODV Carpi (MO)</strong><br>
-                Via G. Molinari 2, Ospedale Ramazzini, Carpi MO<br>
-                Tel: 059 6132038 | Email: amocarpi.odv@gmail.com
+        <div class="footer-content">
+            <p><strong>Associazione Malati Oncologici ODV Carpi (MO)</strong></p>
+            <p style="font-size: 0.85rem; color: #666;">
+                Via G. Molinari 2, Ospedale Ramazzini, Carpi MO | Tel: 059 6132038<br>
+                Email: amocarpi.odv@gmail.com
             </p>
         </div>
     </footer>
