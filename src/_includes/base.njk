@@ -7,27 +7,25 @@
     <title>{{ title }} | AMO Carpi</title>
 
     <style>
-        /* 1. RESET GENERALE: Centra il corpo del sito */
+        /* RESET E BASE */
         body {
             margin: 0;
             padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Forza il centraggio dei figli diretti */
-            min-height: 100vh;
+            font-family: sans-serif;
+            line-height: 1.6;
+            color: #333;
         }
 
-        /* 2. BANNER: Occupa tutta la larghezza */
+        /* BANNER - Sempre a tutta larghezza */
         .banner-30 {
             width: 100%;
             background: linear-gradient(90deg, #004a99, #0066cc);
             color: white;
-            padding: 8px 0;
+            padding: 12px 0; /* Più alto */
             overflow: hidden;
             white-space: nowrap;
             font-weight: bold;
-            font-size: 0.8rem;
+            font-size: 1rem; /* Font più grande */
             text-transform: uppercase;
         }
 
@@ -42,72 +40,81 @@
             100% { transform: translateX(-100%); }
         }
 
-        /* 3. HEADER: Centrato con Grid */
+        /* HEADER - Grande e centrato */
         header {
             width: 100%;
             background-color: white;
             border-bottom: 1px solid #eee;
+            padding: 20px 0; /* Più respiro sopra e sotto */
         }
 
         .header-container {
-            max-width: 1100px;
-            margin: 0 auto; /* CENTRA L'HEADER */
+            max-width: 1300px; /* Molto largo per non sembrare piccolo */
+            margin: 0 auto;
             display: grid;
-            grid-template-columns: 80px 1fr 80px; /* Logo e Spacer bilanciati */
+            grid-template-columns: 120px 1fr 120px; /* Colonne laterali più larghe per bilanciare */
             align-items: center;
-            padding: 10px 20px;
+            padding: 0 30px;
         }
 
         .logo-img {
-            height: 45px;
+            height: 65px; /* Logo più grande, come lo volevi */
             width: auto;
+            display: block;
         }
 
         nav {
             display: flex;
-            justify-content: center; /* CENTRA IL MENU NELLO SPAZIO RIMASTO */
+            justify-content: center;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 25px; /* Più spazio tra i link */
         }
 
         nav a {
             text-decoration: none;
-            color: #444;
-            font-size: 0.9rem;
+            color: #333;
+            font-size: 1.1rem; /* Testo menu più grande */
             font-weight: 500;
+            transition: color 0.3s;
         }
 
-        /* 4. MAIN: Il cuore delle tue notizie */
+        nav a:hover { color: #0066cc; }
+
+        /* CONTENUTO PRINCIPALE - Largo e leggibile */
         main {
-            width: 100%;
-            max-width: 850px; /* Larghezza ideale per leggere notizie */
-            margin: 0 auto;  /* CENTRA IL CONTENUTO */
-            padding: 40px 20px;
-            box-sizing: border-box;
+            max-width: 1100px; /* Aumentato per non far sembrare il sito "stretto" */
+            margin: 0 auto;
+            padding: 50px 30px;
         }
 
-        /* 5. FOOTER: Centrato */
+        /* FOOTER */
         footer {
             width: 100%;
             background-color: #f9f9f9;
             border-top: 1px solid #eee;
-            padding: 40px 20px;
-            margin-top: auto; /* Spinge il footer in fondo se c'è poco testo */
+            padding: 50px 20px;
             text-align: center;
         }
 
         .footer-content {
-            max-width: 850px;
+            max-width: 1100px;
             margin: 0 auto;
         }
 
-        @media (max-width: 800px) {
+        .footer-content p {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
             .header-container {
                 display: flex;
                 flex-direction: column;
-                gap: 15px;
+                gap: 20px;
             }
             .header-spacer { display: none; }
+            nav { gap: 15px; }
         }
     </style>
 </head>
@@ -135,7 +142,8 @@
                 <a href="/sito-associazione/trasparenza">Trasparenza</a>
             </nav>
 
-            <div class="header-spacer"></div> </div>
+            <div class="header-spacer"></div>
+        </div>
     </header>
 
     <main>
@@ -144,8 +152,8 @@
 
     <footer>
         <div class="footer-content">
-            <p><strong>Associazione Malati Oncologici ODV Carpi (MO)</strong></p>
-            <p style="font-size: 0.85rem; color: #666;">
+            <p style="font-size: 1.2rem;"><strong>Associazione Malati Oncologici ODV Carpi (MO)</strong></p>
+            <p style="color: #666;">
                 Via G. Molinari 2, Ospedale Ramazzini, Carpi MO | Tel: 059 6132038<br>
                 Email: amocarpi.odv@gmail.com
             </p>
