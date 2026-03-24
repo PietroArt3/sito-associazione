@@ -13,8 +13,8 @@
         background: linear-gradient(90deg, #004a99, #0066cc);
         color: white;
         padding: 10px 0;
-        overflow: hidden; /* Nasconde il testo che esce dai bordi */
-        white-space: nowrap; /* Impedisce al testo di andare a capo */
+        overflow: hidden;
+        white-space: nowrap;
         font-family: sans-serif;
         font-weight: bold;
         letter-spacing: 2px;
@@ -26,7 +26,7 @@
 
     .scorrimento {
         display: inline-block;
-        padding-left: 100%; /* Inizia fuori dallo schermo a destra */
+        padding-left: 100%;
         animation: scorri 15s linear infinite;
     }
 
@@ -48,44 +48,91 @@
         100% { transform: scale(1); }
     }
 
-    /* Resto dello stile invariato */
-    nav { padding: 20px 0; text-align: center; font-family: sans-serif; }
-    nav a { text-decoration: none; color: #333; margin: 0 10px; transition: color 0.3s; }
-    nav a:hover { color: #0066cc; }
-    footer { text-align: center; padding: 40px 20px; font-family: sans-serif; background-color: #f9f9f9; }
-</style>
+    /* Stile Header e Logo */
+    header {
+        text-align: center;
+        padding: 30px 20px 10px 20px;
+        font-family: sans-serif;
+    }
 
-<div class="banner-30">
-    <div class="scorrimento">
-        30 ANNI DI AMO <span class="cuore-animato">❤</span> 30 ANNI DI AMO <span class="cuore-animato">❤</span> 30 ANNI DI AMO
-    </div>
-</div>
+    .logo-link {
+        display: inline-block;
+        margin-bottom: 20px;
+        text-decoration: none;
+    }
+
+    .logo-img {
+        width: 150px; /* Dimensione ideale per il logo in alto */
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        transition: transform 0.3s ease;
+    }
+
+    .logo-img:hover {
+        transform: scale(1.05); /* Effetto delicato al passaggio del mouse */
+    }
+
+    /* Navigazione */
+    nav {
+        padding: 15px 0;
+        border-top: 1px solid #f0f0f0;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #333;
+        margin: 0 12px;
+        font-size: 0.95rem;
+        transition: color 0.3s;
+    }
+
+    nav a:hover { color: #0066cc; }
+
+    footer { text-align: center; padding: 40px 20px; font-family: sans-serif; background-color: #f9f9f9; }
+
+    /* Responsive: menu più compatto su mobile */
+    @media (max-width: 600px) {
+        nav a { display: inline-block; margin: 5px 10px; }
+        .logo-img { width: 120px; }
+    }
+</style>
 
 </head>
 <body>
 
+    <div class="banner-30">
+        <div class="scorrimento">
+            30 ANNI DI AMO <span class="cuore-animato">❤</span> 30 ANNI DI AMO <span class="cuore-animato">❤</span> 30 ANNI DI AMO
+        </div>
+    </div>
+
     <header>
+        <a href="/sito-associazione/" class="logo-link">
+            <img src="/sito-associazione/img/amo_logo.avif" alt="Logo AMO Carpi" class="logo-img">
+        </a>
+
         <nav>
-            <a href="/sito-associazione/"><b>Notizie</b></a> |
-            <a href="/sito-associazione/chi-siamo">Chi Siamo</a> |
-            <a href="/sito-associazione/fai-una-donazione">Donazioni</a> |
-            <a href="/sito-associazione/progetti">Progetti</a> |
-            <a href="/sito-associazione/servizi">Servizi</a> |
-            <a href="/sito-associazione/contatti">Contatti</a> |
-            <a href="/sito-associazione/trasparenza">Trasparenza</a> |
+            <a href="/sito-associazione/"><b>Notizie</b></a>
+            <a href="/sito-associazione/chi-siamo">Chi Siamo</a>
+            <a href="/sito-associazione/fai-una-donazione">Donazioni</a>
+            <a href="/sito-associazione/progetti">Progetti</a>
+            <a href="/sito-associazione/servizi">Servizi</a>
+            <a href="/sito-associazione/contatti">Contatti</a>
+            <a href="/sito-associazione/trasparenza">Trasparenza</a>
             <a href="/sito-associazione/privacy">Privacy</a>
         </nav>
     </header>
 
     <hr style="border: 0; border-top: 1px solid #eee; margin: 0;">
 
-    <main>
+    <main style="max-width: 1000px; margin: 0 auto; padding: 40px 20px;">
         {{ content | safe }}
     </main>
 
     <footer style="margin-top: 50px; border-top: 1px solid #eee;">
         <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 20px;">
-            <img src="/sito-associazione/img/amo_logo.avif" alt="Logo AMO" style="width: 80px; border-radius: 8px;">
+            <img src="/sito-associazione/img/amo_logo.avif" alt="Logo AMO" style="width: 60px; border-radius: 8px; opacity: 0.7;">
             <p style="margin: 0; color: #555;">
                 <strong>Associazione Malati Oncologici ODV Carpi (MO)</strong><br>
                 <span style="font-size: 0.9rem;">Via G. Molinari 2, Ospedale Ramazzini, Carpi MO | Tel: 059 6132038 - Email: amocarpi.odv@gmail.com</span>
