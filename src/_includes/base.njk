@@ -22,7 +22,7 @@
             width: 100%;
             background: linear-gradient(90deg, #004a99, #0066cc);
             color: white;
-            padding: 6px 0; /* Ridotto */
+            padding: 6px 0;
             overflow: hidden;
             white-space: nowrap;
             font-weight: bold;
@@ -41,40 +41,39 @@
             100% { transform: translateX(-100%); }
         }
 
-        /* HEADER - Sottile e bilanciato */
+        /* HEADER - CORRETTO PER AVVICINARE I COMPONENTI */
         header {
             width: 100%;
             background-color: white;
             border-bottom: 1px solid #eee;
-            padding: 15px 0; /* SPAZIO RIDOTTO AL MINIMO */
+            padding: 5px 0; /* Ridotto ulteriormente */
         }
 
         .header-container {
             max-width: 1200px;
             margin: 0 auto;
-            display: grid;
-            grid-template-columns: 100px 1fr 100px; /* Bilanciamento logo/spazio vuoto */
-            align-items: center;
+            display: flex; /* Cambiato da Grid a Flex */
+            align-items: center; /* Allinea verticalmente logo e scritte */
             padding: 0 20px;
         }
 
         .logo-img {
-            height: 50px; /* DIMENSIONE LOGO RIDOTTA */
+            height: 45px; /* Leggermente più piccolo come richiesto */
             width: auto;
             display: block;
+            margin-right: 30px; /* QUESTO CONTROLLA LA DISTANZA DAL MENU */
         }
 
         nav {
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
-            gap: 18px; /* Spazio tra i link più sobrio */
+            gap: 15px; /* Distanza tra le singole voci del menu */
         }
 
         nav a {
             text-decoration: none;
             color: #444;
-            font-size: 0.95rem; /* Font leggibile ma non enorme */
+            font-size: 0.95rem;
             font-weight: 500;
             transition: color 0.3s;
         }
@@ -82,11 +81,11 @@
         nav a:hover { color: #0066cc; }
         nav a b { color: #0066cc; }
 
-        /* MAIN - Ampio ma centrato */
+        /* MAIN */
         main {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 30px 20px; /* Spazio ridotto tra header e contenuto */
+            padding: 20px 20px; /* Ridotto spazio sopra il contenuto */
         }
 
         /* FOOTER */
@@ -108,11 +107,13 @@
         /* MOBILE */
         @media (max-width: 800px) {
             .header-container {
-                display: flex;
                 flex-direction: column;
-                gap: 10px;
+                text-align: center;
             }
-            .header-spacer { display: none; }
+            .logo-img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
         }
     </style>
 </head>
@@ -139,8 +140,6 @@
                 <a href="/sito-associazione/contatti">Contatti</a>
                 <a href="/sito-associazione/trasparenza">Trasparenza</a>
             </nav>
-
-            <div class="header-spacer"></div>
         </div>
     </header>
 
