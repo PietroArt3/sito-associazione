@@ -29,7 +29,6 @@ jobs:
         run: chmod -R +x node_modules/.bin
 
       - name: Build Eleventy
-        # Usiamo il percorso diretto ai file binari per evitare errori di permessi
         run: npm run build
 
       - name: Upload artifact

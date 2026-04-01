@@ -65,7 +65,6 @@ title: "Contatti"
 </div>
 
 <style>
-  /* Questo piccolo pezzo di codice rende i link interattivi */
   .social-link {
     color: #333;
     text-decoration: none;

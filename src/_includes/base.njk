@@ -7,7 +7,6 @@
     <title>{{ title }} | AMO Carpi</title>
 
     <style>
-        /* RESET BASE */
         body {
             margin: 0;
             padding: 0;
@@ -17,16 +16,15 @@
             background-color: white;
         }
 
-        /* BANNER - Ingrandito come richiesto */
         .banner-30 {
             width: 100%;
             background: linear-gradient(90deg, #004a99, #0066cc);
             color: white;
-            padding: 12px 0; /* Aumentato spessore */
+            padding: 12px 0;
             overflow: hidden;
             white-space: nowrap;
             font-weight: bold;
-            font-size: 1.1rem; /* Carattere più grande */
+            font-size: 1.1rem;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
@@ -65,7 +63,7 @@
             display: block;
         }
 
-        /* MENU - Scritte più grandi */
+        /* MENU */
         nav {
             display: flex;
             justify-content: center;
@@ -87,21 +85,18 @@
             color: #0066cc;
         }
 
-        /* CLASSE PER TAB ATTIVO */
         nav a.active {
             color: #0066cc !important;
             font-weight: 800 !important;
             border-bottom: 2px solid #0066cc;
         }
-
-        /* MAIN - Ridotto padding superiore per avvicinare contenuti */
         main {
+
             max-width: 1100px;
             margin: 0 auto;
             padding: 0 20px 30px 20px;
         }
 
-        /* FOOTER */
         footer {
             width: 100%;
             background-color: #f9f9f9;
@@ -117,7 +112,6 @@
             color: #555;
         }
 
-        /* MOBILE */
         @media (max-width: 800px) {
             .header-container {
                 display: flex;
@@ -179,8 +173,6 @@
             navLinks.forEach(link => {
                 const linkPath = link.getAttribute('href');
 
-                // Se l'URL corrente contiene il percorso del link, aggiungi la classe active
-                // Gestisce sia il caso della home "/" che le altre pagine
                 if (currentUrl === linkPath || (linkPath !== "/sito-associazione/" && currentUrl.includes(linkPath))) {
                     link.classList.add('active');
                 }

@@ -4,17 +4,16 @@ title: "Servizi"
 ---
 
 <style>
-    /* Regola magica per il mobile */
     @media (max-width: 768px) {
         .servizio-flex {
             gap: 20px !important;
         }
         .servizio-testo, .servizio-img {
-            min-width: 100% !important; /* Forza la larghezza piena su schermi piccoli */
-            text-align: left !important; /* Allinea il testo a sinistra su mobile per leggibilità */
+            min-width: 100% !important;
+            text-align: left !important;
         }
         .servizio-img img {
-            width: 100% !important; /* L'immagine occupa tutto lo spazio del telefono */
+            width: 100% !important; 
             max-width: none !important;
         }
     }

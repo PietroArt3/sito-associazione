@@ -4,13 +4,12 @@ title: "Progetti"
 ---
 
 <style>
-    /* Questo assicura che su mobile le colonne vadano una sotto l'altra correttamente */
     @media (max-width: 768px) {
         .progetto-flex {
             gap: 20px !important;
         }
         .progetto-testo, .progetto-img {
-            min-width: 100% !important; /* Forza la larghezza piena su mobile */
+            min-width: 100% !important;
         }
     }
 </style>
