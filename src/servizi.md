@@ -112,3 +112,25 @@ prevenzione.
  Festeggia i tuoi momenti più belli con le Bomboniere d’AMOre!! Le bomboniere solidali di AMO, preparate con cura da una volontaria della Associazione, sono un gesto generoso che sostiene i progetti a favore dei pazienti oncologici. Per info, rivolgersi in segreteria AMO oppure al 335.5480177
  </div>
 </div>
+
+
+<br>
+<hr style="border: 0; height: 1px; background: #ddd; margin: 40px 0;">
+<br>
+
+## Pubblicazioni per i pazienti
+
+<div class="servizio-flex" style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start;">
+
+  <div class="servizio-testo" style="flex: 2; min-width: 300px;">
+Pubblichiamo alcune vostre cose.
+
+<strong>Info ufficio Amo</strong>
+</div>
+
+  <div class="servizio-img" style="flex: 1; min-width: 300px;">
+    <img src="/sito-associazione/img/gruppo_cammino.avif" alt="Gruppo cammino" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  </div>
+
+</div>
+
