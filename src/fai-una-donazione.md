@@ -46,7 +46,7 @@ Per sostenere AMO puoi fare una donazione presso la nostra segreteria al piano t
 La tessera si può fare direttamente in sede AMO oppure tramite bonifico bancario (utilizzando le coordinate qui a fianco), avendo cura di indicare i propri dati anagrafici nella causale.
 
 <div style="margin-top: 15px; font-weight: bold; color: #0066cc;">
-    Un piccolo gesto per far parte della nostra famiglia.
+    Un piccolo gesto per entrare a fare parte di AMO.
 </div>
 
 </div>
@@ -69,7 +69,7 @@ Basta riportare il codice fiscale:
 </div>
 </div>
 
-![Sostieni AMO](/sito-associazione/img/5permille.jpg)
+<img src="/sito-associazione/img/5permille.jpg" alt="Sostieni AMO" class="donazione-img">
 
 <script>
 function copiaTesto(idElemento, btn) {
@@ -92,8 +92,17 @@ function copiaTesto(idElemento, btn) {
 <style>
     h1 { color: #004a99; text-transform: uppercase; font-weight: 800; text-align: center; margin-bottom: 20px; }
     h3 { margin-top: 0; color: #004a99; text-transform: uppercase; font-size: 1.2rem; }
-    /* Nel box blu il titolo deve essere bianco */
+    
+    /* Applica lo stile solo all'immagine con questa specifica classe */
+    .donazione-img { 
+        width: 100%; 
+        max-width: 600px; 
+        border-radius: 20px; 
+        display: block; 
+        margin: 40px auto; 
+        box-shadow: 0 15px 40px rgba(0,0,0,0.1); 
+    }
+    
     div[style*="background: #004a99"] h3 { color: white; }
-    img { width: 100%; max-width: 600px; border-radius: 20px; display: block; margin: 0 auto; box-shadow: 0 15px 40px rgba(0,0,0,0.1); }
     p { line-height: 1.6; text-align: center; }
 </style>
