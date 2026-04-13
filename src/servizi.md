@@ -39,7 +39,7 @@ In caso di modifiche delle terapie comunicate direttamente al paziente o rinunci
 </div>
 
   <div class="servizio-img" style="flex: 1; min-width: 300px;">
-    <img src="/sito-associazione/img/trasporti.avif" alt="Trasporti AMO" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <img src="/sito-associazione/img/trasporti.jpg" alt="Trasporti AMO" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   </div>
 
 </div>
