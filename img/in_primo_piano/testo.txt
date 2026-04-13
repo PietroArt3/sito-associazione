@@ -1,5 +1,6 @@
 È uscito il nuovo numero del nostro giornalino NotiziAMO!
- <a href="/sito-associazione/img/in_primo_piano/NOTIZIAMO_APRILE_2026.pdf" download
+<a href="/sito-associazione/img/in_primo_piano/NOTIZIAMO_APRILE_2026.pdf"
+   target="_blank"
    onmouseover="this.style.backgroundColor='#3a6ad4'; this.style.transform='scale(1.05)';"
    onmouseout="this.style.backgroundColor='#5183e9'; this.style.transform='scale(1)';"
    style="display: inline-flex;
@@ -18,5 +19,5 @@
           transition: all 0.2s ease;
           box-shadow: 0 4px 10px rgba(0,0,0,0.15);
           cursor: pointer;">
-  <i class="fa-solid fa-file-pdf" style="font-size: 1.3rem;"></i> Clicca qua per leggerlo!
+  <i class="fa-solid fa-file-pdf" style="font-size: 1.3rem;"></i> Visualizza
 </a>
