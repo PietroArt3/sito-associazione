@@ -118,18 +118,21 @@ prevenzione.
 <hr style="border: 0; height: 1px; background: #ddd; margin: 40px 0;">
 <br>
 
-## Pubblicazioni per i pazienti
+## Accoglienza
 
 <div class="servizio-flex" style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start;">
 
   <div class="servizio-testo" style="flex: 2; min-width: 300px;">
-Pubblichiamo alcune vostre cose.
+L’Ufficio Amo è aperto al mattino, negli orari di ufficio, per l’accoglienza e l’ascolto dei 
+pazienti oncologici da parte di volontarie formate, per condividere domande, dubbi, 
+esperienze. 
+Sono disponibili brochure divulgative, gratuite per i pazienti, sui temi della salute e 
+prevenzione.
 
-<strong>Info ufficio Amo</strong>
 </div>
 
   <div class="servizio-img" style="flex: 1; min-width: 300px;">
-    <img src="/sito-associazione/img/gruppo_cammino.avif" alt="Gruppo cammino" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <img src="/sito-associazione/img/accoglienza.jpg" alt="Accoglienza" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   </div>
 
 </div>
