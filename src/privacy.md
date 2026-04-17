@@ -8,7 +8,7 @@ INFORMATIVA PRIVACY RESA AI SENSI DEL REGOLAMENTO UE 679/2016 GENERAL DATA PROTE
 
 Secondo le normative indicate il trattamento dei dati sarà improntato ai principi di correttezza, liceità, trasparenza e tutela della riservatezza e dei diritti dell’utente.
 
-Questa informativa per gli utenti/visitatori che interagiscono con il sito web www.amonovecomuni.it è resa  ai sensi del Regolamento UE 2016/679 relativo “alle persone fisiche con riguardo al trattamento dei dati personali  nonché alla libera circolazione di tali dati” ed alla normativa di cookie sulla rete ed in particolare dell’emanazione del Provvedimento del Garante della Privacy dell’8 Maggio 2014 “Individuazione delle modalità semplificate per l’informativa e l’acquisizione del consenso per l’uso dei cookie” e dei successivi “Chiarimenti in merito all’attuazione della normativa in materia di cookie” emessi il 5 giugno 2015. La stessa descrive esclusivamente le modalità di gestione del sito , in  riferimento al trattamento dei dati personali degli utenti/visitatori che lo consultano, e non anche di siti web esterni consultabili dagli utenti cliccando sui link presenti su tale sito. Informazioni aggiuntive potranno essere fornite all’interno di specifiche sezioni.
+Questa informativa per gli utenti/visitatori che interagiscono con il sito web www.amocarpi.it è resa  ai sensi del Regolamento UE 2016/679 relativo “alle persone fisiche con riguardo al trattamento dei dati personali  nonché alla libera circolazione di tali dati” ed alla normativa di cookie sulla rete ed in particolare dell’emanazione del Provvedimento del Garante della Privacy dell’8 Maggio 2014 “Individuazione delle modalità semplificate per l’informativa e l’acquisizione del consenso per l’uso dei cookie” e dei successivi “Chiarimenti in merito all’attuazione della normativa in materia di cookie” emessi il 5 giugno 2015. La stessa descrive esclusivamente le modalità di gestione del sito , in  riferimento al trattamento dei dati personali degli utenti/visitatori che lo consultano, e non anche di siti web esterni consultabili dagli utenti cliccando sui link presenti su tale sito. Informazioni aggiuntive potranno essere fornite all’interno di specifiche sezioni.
 
 1. TIPOLOGIA DI DATI TRATTATI E FINALITA’ DEL TRATTAMENTO
 
@@ -63,15 +63,14 @@ Il trattamento dati sarà inoltre effettuato con logiche di organizzazione ed el
 
 3. FACOLTATIVITA’ DEL CONFERIMENTO DEI DATI
 
-Salvo quanto sopra specificato per i dati di navigazione ed i cookie, il visitatore è libero di fornire o meno propri dati personali, come nel caso di richieste di informazioni o di contatto inviate tramite posta elettronica o di richieste di accesso a servizi, utilities ed applicazioni liberamente scelti. Il loro mancato conferimento può comportare l’impossibilità di ottenere quanto richiesto e può precludere ad  A.M.O. Associazione Malati Oncologici Nove Comuni Modenesi Area Nord – ODV la possibilità di assolvere  agli adempimenti contrattuali come previsti dal contratto di mandato.
+Salvo quanto sopra specificato per i dati di navigazione ed i cookie, il visitatore è libero di fornire o meno propri dati personali, come nel caso di richieste di informazioni o di contatto inviate tramite posta elettronica o di richieste di accesso a servizi, utilities ed applicazioni liberamente scelti. Il loro mancato conferimento può comportare l’impossibilità di ottenere quanto richiesto e può precludere ad  A.M.O. Associazione Malati Oncologici Carpi – ODV la possibilità di assolvere  agli adempimenti contrattuali come previsti dal contratto di mandato.
 
 4. TITOLARE, RESPONSABILI E CATEGORIE DI INCARICATI
 
-Il Titolare del trattamento dei dati personali è l’ Associazione Malati Oncologici Nove Comuni Modenesi Area Nord – ODV con sede in Mirandola  (MO) Via Fogazzaro, 6
+Il Titolare del trattamento dei dati personali è l’ Associazione Malati Oncologici Carpi – ODV con sede in Mirandola  (MO) Via Fogazzaro, 6
 I trattamenti connessi ai servizi web di questo sito sono curati esclusivamente da personale tecnico, incaricato del trattamento.
 Oltre che dai dipendenti del Titolare, alcune operazioni di trattamento dei dati personali potrebbero essere effettuate anche da soggetti terzi, ai quali l’Associazione affida
 l’attività di gestione/manutenzione del sito. In tale evenienza gli stessi soggetti verranno nominati Responsabili del trattamento.
-Informazioni relative ai responsabili del trattamento sono agevolmente reperibili inviando un’email all’indirizzo privacy@amonovecomuni.it
 I dati non saranno oggetto di diffusione.
 
 5. DIRITTI DEGLI INTERESSATI
@@ -88,7 +87,7 @@ Il soggetti cui si riferiscono i dati, ai sensi dell’Art. 13 GDPR UE 679/2016 
 – proporre reclamo ad una autorità di controllo, per l’Italia Garante Privacy;
 – essere informati riguardo alla possibilità che la comunicazione di dati personali può essere un obbligo legale o contrattuale oppure un requisito necessario per la conclusione di un contratto, e sapere se l’interessato ha l’obbligo di fornire i dati personali nonché le possibili conseguenze della mancata comunicazione di tali dati;
 – essere informati circa l’esistenza di un processo decisionale automatizzato, compresa la profilazione e in tali casi, ricevere informazioni significative sulla logica utilizzata, nonché sull’importanza e le conseguenze previste di tale trattamento per l’interessato.
-Ai sensi dell’Art. 14 GDPR UE qualora i dati non siano stati ottenuti presso l’interessato, il Titolare del trattamento  A.M.O. Associazione Malati Oncologici Nove Comuni Modenesi Area Nord – ODV  fornirà all’interessato le seguenti informazioni:
+Ai sensi dell’Art. 14 GDPR UE qualora i dati non siano stati ottenuti presso l’interessato, il Titolare del trattamento  A.M.O. Associazione Malati Oncologici Carpi – ODV  fornirà all’interessato le seguenti informazioni:
 1.
 a) l’identità e i dati di contatto del Titolare del trattamento e, ove applicabile, del suo rappresentante;
 b) i dati di contatto del responsabile della protezione dei dati, ove applicabile;
@@ -105,7 +104,7 @@ f) ove applicabile, l’intenzione del Titolare del trattamento di trasferire da
    f) la fonte da cui hanno origine i dati personali e, se del caso, l’eventualità che i dati provengano da fonti accessibili al pubblico;
    g) l’esistenza di un processo decisionale automatizzato, compresa la profilazione e, almeno in tali casi, informazioni significative sulla logica utilizzata, nonché l’importanza e le conseguenze previste di tale trattamento per l’interessato;
 3.
-Il Titolare del trattamento  A.M.O. Associazione Malati Oncologici Nove Comuni Modenesi Area Nord – ODV  fornisce le informazioni di cui ai paragrafi 1 e 2:
+Il Titolare del trattamento  A.M.O. Associazione Malati Oncologici Carpi – ODV  fornisce le informazioni di cui ai paragrafi 1 e 2:
 a) entro un termine ragionevole dall’ottenimento dei dati personali, ma al più tardi entro un mese, in considerazione delle specifiche circostanze in cui i dati personali sono trattati;
 b) nel caso in cui i dati personali siano destinati alla comunicazione con l’interessato, al più tardi al momento della prima comunicazione all’interessato; oppure nel caso sia prevista la comunicazione ad altro destinatario, non oltre la prima comunicazione dei dati personali.
 4.Qualora il Titolare del trattamento intenda trattare ulteriormente i dati personali per una finalità diversa da quella per cui essi sono stati ottenuti, prima di tale ulteriore trattamento fornirà all’interessato informazioni in merito a tale diversa finalità e ogni informazione pertinente di cui al paragrafo 2.
