@@ -81,7 +81,7 @@ title: "Chi Siamo"
     
     <div style="margin: 20px 0; height: 1px; background: #ddd; width: 50%; margin-left: 25%;"></div>
     
-    <div class="membro" style="font-weight: bold; color: #0066cc;">
+    <div class="membro">
         <span class="carica">Presidente Onorario</span> Artioli Fabrizio
     </div>
   </div>
