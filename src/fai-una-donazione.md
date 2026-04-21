@@ -69,7 +69,7 @@ Basta riportare il codice fiscale:
 </div>
 </div>
 
-<img src="/sito-associazione/img/5permille.jpg" alt="Sostieni AMO" class="donazione-img">
+<img src="/img/5permille.jpg" alt="Sostieni AMO" class="donazione-img">
 
 <script>
 function copiaTesto(idElemento, btn) {

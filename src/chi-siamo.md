@@ -50,8 +50,8 @@ title: "Chi Siamo"
   </div>
 
   <div class="storia-img" style="flex: 1; min-width: 350px;">
-    <img src="/sito-associazione/img/Gruppo_Amo_2023.jpg" alt="I nostri volontari" style="width: 100%;">
-    <img src="/sito-associazione/img/foto_palco1.jpg" alt="I volontari sul palco" style="width: 100%;">
+    <img src="/img/Gruppo_Amo_2023.jpg" alt="I nostri volontari" style="width: 100%;">
+    <img src="/img/foto_palco1.jpg" alt="I volontari sul palco" style="width: 100%;">
   </div>
 
 </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/sito-associazione/img/favicon.png">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
     <title>{{ title }} | AMO Carpi</title>
 
     <style>
@@ -145,19 +145,19 @@
 
     <header>
         <div class="header-container">
-            <a href="/sito-associazione/">
-                <img src="/sito-associazione/img/amo_logo.avif" alt="Logo AMO" class="logo-img">
+            <a href="/">
+                <img src="/img/amo_logo.avif" alt="Logo AMO" class="logo-img">
             </a>
 
             <nav id="main-nav">
-                <a href="/sito-associazione/">Notizie</a>
-                <a href="/sito-associazione/chi-siamo/">Chi Siamo</a>
-                <a href="/sito-associazione/fai-una-donazione/">Donazioni</a>
-                <a href="/sito-associazione/progetti/">Progetti</a>
-                <a href="/sito-associazione/servizi/">Servizi</a>
-                <a href="/sito-associazione/contatti/">Contatti</a>
-                <a href="/sito-associazione/trasparenza/">Trasparenza</a>
-                <a href="/sito-associazione/privacy/">Privacy</a>
+                <a href="/">Notizie</a>
+                <a href="/chi-siamo/">Chi Siamo</a>
+                <a href="/fai-una-donazione/">Donazioni</a>
+                <a href="/progetti/">Progetti</a>
+                <a href="/servizi/">Servizi</a>
+                <a href="/contatti/">Contatti</a>
+                <a href="/trasparenza/">Trasparenza</a>
+                <a href="/privacy/">Privacy</a>
             </nav>
 
             <div class="header-spacer"></div>
@@ -184,7 +184,7 @@
             navLinks.forEach(link => {
                 const linkPath = link.getAttribute('href');
 
-                if (currentUrl === linkPath || (linkPath !== "/sito-associazione/" && currentUrl.includes(linkPath))) {
+                if (currentUrl === linkPath || (linkPath !== "/" && currentUrl.includes(linkPath))) {
                     link.classList.add('active');
                 }
             });

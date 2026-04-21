@@ -37,8 +37,8 @@ title: "Servizi"
       In caso di modifiche delle terapie comunicate direttamente al paziente o rinuncia del viaggio, siete pregati di avvisare la segreteria al più presto possibile per evitare disguidi e/o viaggi inutili.
     </div>
     <div class="servizio-img" style="flex: 1; min-width: 300px; display: flex; flex-direction: column; gap: 15px;">
-      <img src="/sito-associazione/img/trasporti.jpg" alt="Trasporti AMO" style="width: 100%;">
-      <img src="/sito-associazione/img/Autisti.jpeg" alt="Autisti AMO" style="width: 100%;">
+      <img src="/img/trasporti.jpg" alt="Trasporti AMO" style="width: 100%;">
+      <img src="/img/Autisti.jpeg" alt="Autisti AMO" style="width: 100%;">
     </div>
   </div>
 </div>
@@ -49,7 +49,7 @@ title: "Servizi"
   <div style="text-align: right;"><h2>Prestito parrucche</h2></div>
   <div class="servizio-flex inverti-mobile" style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
     <div class="servizio-img" style="flex: 1; min-width: 300px;">
-      <img src="/sito-associazione/img/parrucche.avif" alt="Prestito parrucche" style="width: 100%;">
+      <img src="/img/parrucche.avif" alt="Prestito parrucche" style="width: 100%;">
     </div>
     <div class="servizio-testo" style="flex: 1.5; min-width: 300px;">
       Amo mette a disposizione gratuitamente una parrucca o un turbante che può essere trattenuta per tutto il tempo delle terapie.
@@ -78,7 +78,7 @@ title: "Servizi"
       <strong style="color: #004a99;">Info ufficio Amo</strong>
     </div>
     <div class="servizio-img" style="flex: 1; min-width: 300px;">
-      <img src="/sito-associazione/img/gruppo_cammino.avif" alt="Gruppo cammino" style="width: 100%;">
+      <img src="/img/gruppo_cammino.avif" alt="Gruppo cammino" style="width: 100%;">
     </div>
   </div>
 </div>
@@ -89,7 +89,7 @@ title: "Servizi"
   <div style="text-align: right;"><h2>Bomboniere Solidali AMO</h2></div>
   <div class="servizio-flex inverti-mobile" style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
     <div class="servizio-img" style="flex: 1; min-width: 250px;">
-      <img src="/sito-associazione/img/bomboniera.avif" alt="Bomboniere Solidali" style="width: 100%; max-width: 400px; display: block; margin-left: auto;">
+      <img src="/img/bomboniera.avif" alt="Bomboniere Solidali" style="width: 100%; max-width: 400px; display: block; margin-left: auto;">
     </div>
     <div class="servizio-testo" style="flex: 1.5; min-width: 300px;">
       Festeggia i tuoi momenti più belli con le Bomboniere d’AMOre!! Le bomboniere solidali di AMO, preparate con cura da una volontaria della Associazione, sono un gesto generoso che sostiene i progetti a favore dei pazienti oncologici. 
@@ -110,7 +110,7 @@ title: "Servizi"
       Sono disponibili brochure divulgative, gratuite per i pazienti, sui temi della salute e prevenzione.
     </div>
     <div class="servizio-img" style="flex: 1; min-width: 300px;">
-      <img src="/sito-associazione/img/accoglienza.jpg" alt="Accoglienza" style="width: 100%;">
+      <img src="/img/accoglienza.jpg" alt="Accoglienza" style="width: 100%;">
     </div>
   </div>
 </div>

@@ -39,7 +39,7 @@ title: "Progetti"
       il cambio dei colori ambientali.
     </div>
     <div class="progetto-img" style="flex: 1; min-width: 300px;">
-      <img src="/sito-associazione/img/acceleratore.jpg" alt="Radioterapia Carpi" style="width: 100%;">
+      <img src="/img/acceleratore.jpg" alt="Radioterapia Carpi" style="width: 100%;">
     </div>
   </div>
 </div>
@@ -50,7 +50,7 @@ title: "Progetti"
   <div style="text-align: right;"><h2>Hospice</h2></div>
   <div class="progetto-flex inverti-mobile" style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
     <div class="progetto-img" style="flex: 1; min-width: 300px;">
-      <img src="/sito-associazione/img/hospice.jpg" alt="Hospice" style="width: 100%;">
+      <img src="/img/hospice.jpg" alt="Hospice" style="width: 100%;">
     </div>
     <div class="progetto-testo" style="flex: 2; min-width: 300px;">
       La nostra Associazione è impegnata da anni, insieme ad ASP Comuni Modenesi Area Nord e AMO Nove Comuni Modenesi Area Nord per la <strong>costruzione di un Hospice territoriale</strong> per l’assistenza e la cura dei pazienti in fase avanzata di malattia che sorgerà a San Possidonio (Mo).
@@ -97,7 +97,7 @@ title: "Progetti"
       Email: <strong>margralaz@gmail.com</strong>
     </div>
     <div class="progetto-img" style="flex: 1; min-width: 300px;">
-      <img src="/sito-associazione/img/radioterapia.avif" alt="Ambulatorio" style="width: 100%;">
+      <img src="/img/radioterapia.avif" alt="Ambulatorio" style="width: 100%;">
     </div>
   </div>
 </div>
