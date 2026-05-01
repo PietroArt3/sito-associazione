@@ -17,6 +17,14 @@ title: "Contatti"
       41012 Carpi MO
     </p>
   </div>
+  
+  <div style="display: flex; align-items: flex-start; margin-bottom: 10px;">
+    <span style="height: 12px; width: 12px; background-color: #333333; border-radius: 50%; display: inline-block; margin-right: 10px; margin-top: 5px;"></span>
+    <p style="margin: 0; color: #333; line-height: 1.5;">
+      Via I. Cremaschi 7<br>
+      41012 Carpi MO
+    </p>
+  </div>
 </div>
 
 <div style="font-family: sans-serif; flex: 1; min-width: 200px;">
