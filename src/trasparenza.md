@@ -8,6 +8,15 @@ title: "Trasparenza"
 <br>
 <div style="text-align: center;">
 
+## 2024
+<a href="/doc/2024.pdf" download style="display: inline-block; padding: 10px 20px; background-color: #5183e9; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+  <i class="fa-solid fa-file-pdf"></i> PDF
+</a>
+<br><br><br>
+<br>
+<hr style="border: 0; height: 1px; background: #ddd; margin: 40px 0;">
+<br>
+
 ## 2023
 <a href="/doc/2023.pdf" download style="display: inline-block; padding: 10px 20px; background-color: #5183e9; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
   <i class="fa-solid fa-file-pdf"></i> PDF
