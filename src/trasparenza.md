@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 title: "Trasparenza"
+description: "Rendicontazione annuale dei contributi 5 per mille ricevuti da AMO Carpi, scaricabile in PDF."
 ---
 
 # Trasparenza - Rendicontazione 5permille

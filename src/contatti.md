@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 title: "Contatti"
+description: "Sede, telefono, email, orari di apertura e canali social di AMO, Associazione Malati Oncologici ODV di Carpi."
 ---
 
 # Contatti
@@ -13,7 +14,7 @@ title: "Contatti"
   <div style="display: flex; align-items: flex-start; margin-bottom: 10px;">
     <span style="height: 12px; width: 12px; background-color: #333333; border-radius: 50%; display: inline-block; margin-right: 10px; margin-top: 5px;"></span>
     <p style="margin: 0; color: #333; line-height: 1.5;">
-      <strong style="width: 80px; display: inline-block;">Sede operativa:</strong><br>
+      <strong>Sede operativa:</strong><br>
       Via G. Molinari 2<br>
       41012 Carpi MO
     </p>
@@ -22,7 +23,7 @@ title: "Contatti"
   <div style="display: flex; align-items: flex-start; margin-bottom: 10px;">
     <span style="height: 12px; width: 12px; background-color: #333333; border-radius: 50%; display: inline-block; margin-right: 10px; margin-top: 5px;"></span>
     <p style="margin: 0; color: #333; line-height: 1.5;">
-      <strong style="width: 80px; display: inline-block;">Sede legale:</strong><br>
+      <strong>Sede legale:</strong><br>
       Via I. Cremaschi 7<br>
       41012 Carpi MO
     </p>

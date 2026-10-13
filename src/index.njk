@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 title: "Ultime Notizie"
+description: "AMO - Associazione Malati Oncologici ODV di Carpi: notizie, eventi e iniziative in primo piano a sostegno dei pazienti oncologici."
 ---
 
 <style>
@@ -27,7 +28,21 @@ gap: 20px;
 </style>
 
 <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v25.0"></script>
+<script>
+// La bacheca Facebook viene caricata solo dopo il consenso ai cookie di terze parti
+document.addEventListener("amo-consenso", function(e) {
+    if (e.detail !== "si" || document.getElementById("fb-sdk")) return;
+    document.getElementById("fb-consenso").style.display = "none";
+    document.getElementById("fb-bacheca").style.display = "block";
+    const sdk = document.createElement("script");
+    sdk.id = "fb-sdk";
+    sdk.async = true;
+    sdk.defer = true;
+    sdk.crossOrigin = "anonymous";
+    sdk.src = "https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v25.0";
+    document.body.appendChild(sdk);
+});
+</script>
 
 <section style="margin: 0 auto 40px auto; max-width: 1300px; padding: 0 20px; font-family: sans-serif;">
 
@@ -91,6 +106,12 @@ gap: 20px;
     <div class="sidebar-left-container" style="flex: 1; min-width: 300px; max-width: 450px; display: flex; flex-direction: column; gap: 30px;">
 
         <div class="fb-container" style="flex: 1; min-width: 300px; max-width: 450px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; background: #fff;">
+                    <div id="fb-consenso" style="padding: 30px 20px; text-align: center;">
+                        <p style="margin: 0 0 15px 0; color: #444;">Per vedere qui la bacheca Facebook di AMO è necessario accettare i cookie di terze parti (Meta).</p>
+                        <button type="button" onclick="window.amoConsenso.salva('si')" style="cursor: pointer; border: none; background: #004a99; color: white; padding: 10px 20px; border-radius: 8px; font-size: 1rem; font-weight: bold;">Accetta e mostra la bacheca</button>
+                        <p style="margin: 15px 0 0 0;"><a href="https://www.facebook.com/amo.carpi" target="_blank" rel="noopener" style="color: #0066cc;">Apri la pagina Facebook di AMO</a></p>
+                    </div>
+                    <div id="fb-bacheca" style="display: none;">
                     <div class="fb-page"
                          data-href="https://www.facebook.com/amo.carpi"
                          data-tabs="timeline"
@@ -103,6 +124,7 @@ gap: 20px;
                         <blockquote cite="https://www.facebook.com/amo.carpi" class="fb-xfbml-parse-ignore">
                             <a href="https://www.facebook.com/amo.carpi">Caricamento bacheca...</a>
                         </blockquote>
+                    </div>
                     </div>
                 </div>
 

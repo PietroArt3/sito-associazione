@@ -3,8 +3,10 @@ const path = require("path");
 
 module.exports = function(eleventyConfig) {
     // 1. Copia delle cartelle (Pass-through)
-    eleventyConfig.addPassthroughCopy("./src/css");
-    eleventyConfig.addPassthroughCopy("./img");
+    // strumenti.txt contiene solo appunti interni: resta nella cartella ma non viene pubblicato
+    eleventyConfig.addPassthroughCopy("./img", {
+        filter: (percorso) => path.basename(percorso) !== "strumenti.txt"
+    });
     eleventyConfig.addPassthroughCopy("doc");
 
     // 2. Definizione dei Dati Globali (Primo Piano)

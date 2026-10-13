@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 title: "Servizi"
+description: "I servizi gratuiti di AMO Carpi per i pazienti oncologici: trasporti, prestito parrucche, gruppi di autoaiuto, accoglienza e bomboniere solidali."
 ---
 
 <style>
@@ -37,8 +38,8 @@ title: "Servizi"
       In caso di modifiche delle terapie comunicate direttamente al paziente o rinuncia del viaggio, siete pregati di avvisare la segreteria al più presto possibile per evitare disguidi e/o viaggi inutili.
     </div>
     <div class="servizio-img" style="flex: 1; min-width: 300px; display: flex; flex-direction: column; gap: 15px;">
-      <img src="/img/trasporti.jpg" alt="Trasporti AMO" style="width: 100%;">
-      <img src="/img/Autisti.jpeg" alt="Autisti AMO" style="width: 100%;">
+      <img src="/img/trasporti.jpg" alt="Trasporti AMO" width="825" height="371" style="width: 100%;">
+      <img src="/img/Autisti.jpeg" alt="Autisti AMO" width="1600" height="1200" loading="lazy" style="width: 100%;">
     </div>
   </div>
 </div>
@@ -49,7 +50,7 @@ title: "Servizi"
   <div style="text-align: right;"><h2>Prestito parrucche</h2></div>
   <div class="servizio-flex inverti-mobile" style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
     <div class="servizio-img" style="flex: 1; min-width: 300px;">
-      <img src="/img/parrucche.avif" alt="Prestito parrucche" style="width: 100%;">
+      <img src="/img/parrucche.avif" alt="Prestito parrucche" width="1154" height="758" loading="lazy" style="width: 100%;">
     </div>
     <div class="servizio-testo" style="flex: 1.5; min-width: 300px;">
       Amo mette a disposizione gratuitamente una parrucca o un turbante che può essere trattenuta per tutto il tempo delle terapie.
@@ -64,21 +65,17 @@ title: "Servizi"
 <hr>
 
 <div class="sezione-servizio">
-  <h2>Gruppi di Autoaiuto e accoglienza pazienti</h2>
+  <h2>Gruppi di Autoaiuto</h2>
   <div class="servizio-flex" style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
     <div class="servizio-testo" style="flex: 1.5; min-width: 300px;">
       Condividere è il modo migliore per riprendere in mano la normalità della propria vita, dopo una diagnosi di tumore.
       <br><br>
       Proponiamo gruppi di autoaiuto, attivi da ottobre a maggio con ritrovo periodico di: Ferri e uncinetto; Laboratorio delle rose; Riabilitazione pavimento pelvico; Danza del ventre; Ginnastica posturale; Cammino; Donne Arcobaleno; Coro CantiAmo; Cineforum.
       <br><br>
-      L’Ufficio Amo è aperto al mattino, negli orari di ufficio, per l’accoglienza e l’ascolto dei pazienti oncologici da parte di volontarie formate, per condividere domande, dubbi, esperienze.
-      <br><br>
-      Sono disponibili brochure divulgative, gratuite per i pazienti, sui temi della salute e prevenzione.
-      <br><br>
-      <strong style="color: #004a99;">Info ufficio Amo</strong>
+      <strong style="color: #004a99;">Info: <a href="/contatti/" style="color: #004a99;">ufficio Amo</a></strong>
     </div>
     <div class="servizio-img" style="flex: 1; min-width: 300px;">
-      <img src="/img/gruppo_cammino.avif" alt="Gruppo cammino" style="width: 100%;">
+      <img src="/img/gruppo_cammino.avif" alt="Gruppo cammino" width="898" height="590" loading="lazy" style="width: 100%;">
     </div>
   </div>
 </div>
@@ -89,7 +86,7 @@ title: "Servizi"
   <div style="text-align: right;"><h2>Bomboniere Solidali AMO</h2></div>
   <div class="servizio-flex inverti-mobile" style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
     <div class="servizio-img" style="flex: 1; min-width: 250px;">
-      <img src="/img/bomboniera.avif" alt="Bomboniere Solidali" style="width: 100%; max-width: 400px; display: block; margin-left: auto;">
+      <img src="/img/bomboniera.avif" alt="Bomboniere Solidali" width="596" height="800" loading="lazy" style="width: 100%; max-width: 400px; display: block; margin-left: auto;">
     </div>
     <div class="servizio-testo" style="flex: 1.5; min-width: 300px;">
       Festeggia i tuoi momenti più belli con le Bomboniere d’AMOre!! Le bomboniere solidali di AMO, preparate con cura da una volontaria della Associazione, sono un gesto generoso che sostiene i progetti a favore dei pazienti oncologici. 
@@ -110,7 +107,7 @@ title: "Servizi"
       Sono disponibili brochure divulgative, gratuite per i pazienti, sui temi della salute e prevenzione.
     </div>
     <div class="servizio-img" style="flex: 1; min-width: 300px;">
-      <img src="/img/accoglienza.jpg" alt="Accoglienza" style="width: 100%;">
+      <img src="/img/accoglienza.jpg" alt="Accoglienza" width="624" height="597" loading="lazy" style="width: 100%;">
     </div>
   </div>
 </div>

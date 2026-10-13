@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 title: "Fai una donazione"
+description: "Sostieni AMO Carpi con una donazione, diventando socio o devolvendo il 5x1000: coordinate bancarie e codice fiscale."
 ---
 
 # AMO vive grazie alla tua generosità!
@@ -69,23 +70,62 @@ Basta riportare il codice fiscale:
 </div>
 </div>
 
-<img src="/img/5permille.jpg" alt="Sostieni AMO" class="donazione-img">
+<img src="/img/5permille.jpg" alt="Sostieni AMO" class="donazione-img" width="960" height="364" loading="lazy">
 
 <script>
 function copiaTesto(idElemento, btn) {
-  const testo = document.getElementById(idElemento).innerText;
-  const originalHTML = btn.innerHTML;
-  const originalBG = btn.style.background;
+  const elemento = document.getElementById(idElemento);
+  // Si copia senza spazi, così IBAN e codice fiscale si possono incollare direttamente
+  const testo = elemento.innerText.replace(/\s+/g, '');
 
-  navigator.clipboard.writeText(testo).then(() => {
-    btn.innerHTML = '✓ Copiato!';
-    btn.style.background = "#28a745";
-    
-    setTimeout(() => {
-      btn.innerHTML = originalHTML;
-      btn.style.background = originalBG;
+  if (btn.dataset.originalHTML === undefined) {
+    btn.dataset.originalHTML = btn.innerHTML;
+    btn.dataset.originalBG = btn.style.background;
+    btn.dataset.originalColor = btn.style.color;
+  }
+
+  function mostraEsito(riuscito) {
+    btn.innerHTML = riuscito ? '✓ Copiato!' : 'Copia non riuscita';
+    btn.style.background = riuscito ? "#28a745" : "#c0392b";
+    btn.style.color = "white";
+
+    clearTimeout(btn.timerCopia);
+    btn.timerCopia = setTimeout(() => {
+      btn.innerHTML = btn.dataset.originalHTML;
+      btn.style.background = btn.dataset.originalBG;
+      btn.style.color = btn.dataset.originalColor;
     }, 2000);
-  });
+  }
+
+  // Metodo di riserva per i browser dove navigator.clipboard non è disponibile
+  function copiaDiRiserva() {
+    const area = document.createElement('textarea');
+    area.value = testo;
+    area.setAttribute('readonly', '');
+    area.style.position = 'fixed';
+    area.style.opacity = '0';
+    document.body.appendChild(area);
+    area.select();
+    let riuscito = false;
+    try { riuscito = document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(area);
+
+    if (!riuscito) {
+      // Si seleziona il testo così può essere copiato a mano
+      const selezione = window.getSelection();
+      const intervallo = document.createRange();
+      intervallo.selectNodeContents(elemento);
+      selezione.removeAllRanges();
+      selezione.addRange(intervallo);
+    }
+    mostraEsito(riuscito);
+  }
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(testo).then(() => mostraEsito(true), copiaDiRiserva);
+  } else {
+    copiaDiRiserva();
+  }
 }
 </script>
 
