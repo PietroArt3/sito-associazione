@@ -39,7 +39,7 @@ description: "I servizi gratuiti di AMO Carpi per i pazienti oncologici: traspor
     </div>
     <div class="servizio-img" style="flex: 1; min-width: 300px; display: flex; flex-direction: column; gap: 15px;">
       <img src="/img/trasporti.jpg" alt="Trasporti AMO" width="825" height="371" style="width: 100%;">
-      <img src="/img/Autisti.jpeg" alt="Autisti AMO" width="1600" height="1200" loading="lazy" style="width: 100%;">
+      <img src="/img/Autisti.jpeg" alt="Autisti AMO" width="1200" height="900" loading="lazy" style="width: 100%;">
     </div>
   </div>
 </div>
