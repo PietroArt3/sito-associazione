@@ -292,8 +292,10 @@
             const CHIAVE = "amo-consenso-cookie";
             const DURATA = 180 * 24 * 60 * 60 * 1000;
             const banner = document.getElementById("cookie-banner");
+            let sceltaInMemoria;
 
             function leggi() {
+                if (sceltaInMemoria !== undefined) return sceltaInMemoria;
                 try {
                     const dato = JSON.parse(localStorage.getItem(CHIAVE));
                     if (dato && (dato.scelta === "si" || dato.scelta === "no") && Date.now() - dato.data < DURATA) {
@@ -309,11 +311,15 @@
 
             function salva(scelta) {
                 const precedente = leggi();
+                sceltaInMemoria = scelta;
                 try {
                     localStorage.setItem(CHIAVE, JSON.stringify({ scelta: scelta, data: Date.now() }));
-                } catch (e) {}
+                } catch (e) {
+                    // Non riutilizzare un vecchio consenso se la nuova scelta non si può salvare.
+                    try { localStorage.removeItem(CHIAVE); } catch (e) {}
+                }
                 banner.hidden = true;
-                if (precedente === "si" && scelta === "no") {
+                if (scelta === "no" && (precedente === "si" || document.getElementById("fb-sdk"))) {
                     // Consenso revocato: si ricarica la pagina senza i contenuti di terze parti
                     window.location.reload();
                     return;
