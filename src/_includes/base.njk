@@ -131,58 +131,6 @@
             mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' d='M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6H6zm7 1.5L18.5 9H14a1 1 0 0 1-1-1V3.5zM7 13h10v1.5H7V13zm0 3.5h10V18H7v-1.5z'/%3E%3C/svg%3E") no-repeat center / contain;
         }
 
-        /* BANNER COOKIE */
-        .cookie-banner {
-            position: fixed;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 1000;
-            background: white;
-            border-top: 3px solid #004a99;
-            box-shadow: 0 -6px 20px rgba(0,0,0,0.15);
-            padding: 18px 20px;
-        }
-
-        .cookie-banner[hidden] { display: none; }
-
-        .cookie-banner-inner {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 15px 25px;
-        }
-
-        .cookie-banner p {
-            flex: 1 1 400px;
-            margin: 0;
-            font-size: 0.95rem;
-            text-align: left;
-            color: #333;
-        }
-
-        .cookie-banner a { color: #0066cc; }
-
-        .cookie-banner-pulsanti {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .cookie-banner button {
-            cursor: pointer;
-            border: 2px solid #004a99;
-            background: #004a99;
-            color: white;
-            padding: 10px 22px;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-weight: bold;
-            font-family: inherit;
-        }
-
         .footer-content a {
             color: #555;
         }
@@ -266,84 +214,9 @@
             <p><strong>Associazione Malati Oncologici ODV Carpi (MO)</strong></p>
             <p>Via G. Molinari 2, Ospedale Ramazzini, Carpi MO | Tel: 059 6132038</p>
             <p>Email: amocarpi.odv@gmail.com</p>
-            <p><a href="/privacy/">Privacy e cookie</a> | <a href="#" id="preferenze-cookie">Preferenze cookie</a></p>
+            <p><a href="/privacy/">Privacy e cookie</a></p>
         </div>
     </footer>
-
-    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Informativa sui cookie" hidden>
-        <div class="cookie-banner-inner">
-            <p>
-                Questo sito usa solo strumenti tecnici necessari al suo funzionamento. Con il tuo consenso viene inoltre caricata la bacheca
-                Facebook di AMO, che comporta l'installazione di cookie di terze parti (Meta), anche di profilazione.
-                Puoi accettare o rifiutare: se rifiuti, il sito funziona comunque e la bacheca non viene caricata.
-                Maggiori informazioni nella <a href="/privacy/">Privacy e cookie policy</a>.
-            </p>
-            <div class="cookie-banner-pulsanti">
-                <button type="button" id="cookie-rifiuta">Rifiuta</button>
-                <button type="button" id="cookie-accetta">Accetta</button>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        // Consenso ai cookie di terze parti (bacheca Facebook).
-        // La scelta viene ricordata per 6 mesi e si può cambiare da "Preferenze cookie" nel footer.
-        (function() {
-            const CHIAVE = "amo-consenso-cookie";
-            const DURATA = 180 * 24 * 60 * 60 * 1000;
-            const banner = document.getElementById("cookie-banner");
-            let sceltaInMemoria;
-
-            function leggi() {
-                if (sceltaInMemoria !== undefined) return sceltaInMemoria;
-                try {
-                    const dato = JSON.parse(localStorage.getItem(CHIAVE));
-                    if (dato && (dato.scelta === "si" || dato.scelta === "no") && Date.now() - dato.data < DURATA) {
-                        return dato.scelta;
-                    }
-                } catch (e) {}
-                return null;
-            }
-
-            function notifica(scelta) {
-                document.dispatchEvent(new CustomEvent("amo-consenso", { detail: scelta }));
-            }
-
-            function salva(scelta) {
-                const precedente = leggi();
-                sceltaInMemoria = scelta;
-                try {
-                    localStorage.setItem(CHIAVE, JSON.stringify({ scelta: scelta, data: Date.now() }));
-                } catch (e) {
-                    // Non riutilizzare un vecchio consenso se la nuova scelta non si può salvare.
-                    try { localStorage.removeItem(CHIAVE); } catch (e) {}
-                }
-                banner.hidden = true;
-                if (scelta === "no" && (precedente === "si" || document.getElementById("fb-sdk"))) {
-                    // Consenso revocato: si ricarica la pagina senza i contenuti di terze parti
-                    window.location.reload();
-                    return;
-                }
-                notifica(scelta);
-            }
-
-            window.amoConsenso = { leggi: leggi, salva: salva };
-
-            document.getElementById("cookie-accetta").addEventListener("click", function() { salva("si"); });
-            document.getElementById("cookie-rifiuta").addEventListener("click", function() { salva("no"); });
-            document.getElementById("preferenze-cookie").addEventListener("click", function(e) {
-                e.preventDefault();
-                banner.hidden = false;
-            });
-
-            const scelta = leggi();
-            if (scelta === null) {
-                banner.hidden = false;
-            } else {
-                notifica(scelta);
-            }
-        })();
-    </script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {

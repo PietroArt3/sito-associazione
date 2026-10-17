@@ -9,6 +9,12 @@ permissions:
   pages: write
   id-token: write
 
+# Il pannello (Pages CMS) può fare due salvataggi di fila (file caricato + notizia):
+# le pubblicazioni vengono messe in coda, così online finisce sempre l'ultima versione.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest

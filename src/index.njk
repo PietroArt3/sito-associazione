@@ -25,24 +25,28 @@ flex-direction: column;
 gap: 20px;
 }
 }
+/* Ultime notizie: il testo lungo si ferma a 4 righe, con "Leggi tutto" per aprirlo */
+.notizia-testo {
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 4;
+overflow: hidden;
+}
+.notizia-testo.aperta {
+display: block;
+}
+.notizia-altro {
+margin-top: 6px;
+padding: 0;
+border: none;
+background: none;
+color: #0066cc;
+font-family: inherit;
+font-size: 0.9rem;
+font-weight: bold;
+cursor: pointer;
+}
 </style>
-
-<div id="fb-root"></div>
-<script>
-// La bacheca Facebook viene caricata solo dopo il consenso ai cookie di terze parti
-document.addEventListener("amo-consenso", function(e) {
-    if (e.detail !== "si" || document.getElementById("fb-sdk")) return;
-    document.getElementById("fb-consenso").style.display = "none";
-    document.getElementById("fb-bacheca").style.display = "block";
-    const sdk = document.createElement("script");
-    sdk.id = "fb-sdk";
-    sdk.async = true;
-    sdk.defer = true;
-    sdk.crossOrigin = "anonymous";
-    sdk.src = "https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v25.0";
-    document.body.appendChild(sdk);
-});
-</script>
 
 <section style="margin: 0 auto 40px auto; max-width: 1300px; padding: 0 20px; font-family: sans-serif;">
 
@@ -105,35 +109,66 @@ document.addEventListener("amo-consenso", function(e) {
 
     <div class="sidebar-left-container" style="flex: 1; min-width: 300px; max-width: 450px; display: flex; flex-direction: column; gap: 30px;">
 
-        <div class="fb-container" style="flex: 1; min-width: 300px; max-width: 450px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; background: #fff;">
-                    <div id="fb-consenso" style="padding: 30px 20px; text-align: center;">
-                        <p style="margin: 0 0 15px 0; color: #444;">Per vedere qui la bacheca Facebook di AMO è necessario accettare i cookie di terze parti (Meta).</p>
-                        <button type="button" onclick="window.amoConsenso.salva('si')" style="cursor: pointer; border: none; background: #004a99; color: white; padding: 10px 20px; border-radius: 8px; font-size: 1rem; font-weight: bold;">Accetta e mostra la bacheca</button>
-                        <p style="margin: 15px 0 0 0;"><a href="https://www.facebook.com/amo.carpi" target="_blank" rel="noopener" style="color: #0066cc;">Apri la pagina Facebook di AMO</a></p>
-                    </div>
-                    <div id="fb-bacheca" style="display: none;">
-                    <div class="fb-page"
-                         data-href="https://www.facebook.com/amo.carpi"
-                         data-tabs="timeline"
-                         data-width="500"
-                         data-height="700"
-                         data-small-header="false"
-                         data-adapt-container-width="true"
-                         data-hide-cover="false"
-                         data-show-facepile="true">
-                        <blockquote cite="https://www.facebook.com/amo.carpi" class="fb-xfbml-parse-ignore">
-                            <a href="https://www.facebook.com/amo.carpi">Caricamento bacheca...</a>
-                        </blockquote>
-                    </div>
-                    </div>
+        {% if notizie %}
+        {% set mesi = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"] %}
+        <div class="notizie-container" style="width: 100%; background: #fff; border: 2px solid #004a99; border-radius: 15px; padding: 20px 20px 5px 20px; box-sizing: border-box; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+            <h4 style="margin: 0 0 5px 0; color: #004a99; text-transform: uppercase; font-weight: 800; font-size: 1.1rem; letter-spacing: 1px; text-align: center;">
+                Ultime Notizie
+            </h4>
+            {# I file delle notizie si chiamano anno-mese-giorno-ora: dal più recente, solo i primi 3 #}
+            {% asyncEach chiave, notizia in notizie | dictsort | reverse %}
+            {% if loop.index <= 3 %}
+            {% set data = chiave.split("-") %}
+            <div style="display: flex; gap: 15px; align-items: flex-start; padding: 15px 0;{% if loop.index > 1 %} border-top: 1px solid #eee;{% endif %}">
+                {% if notizia.file and notizia.file.toLowerCase().endsWith(".pdf") %}
+                <a href="{{ notizia.file }}" target="_blank" aria-label="Apri il PDF"
+                   style="flex-shrink: 0; width: 90px; height: 90px; border-radius: 10px; background-color: #416fc8; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+                    <i class="fa-solid fa-file-pdf" style="font-size: 1.8rem;"></i> PDF
+                </a>
+                {% elif notizia.file %}
+                <a href="{{ notizia.file }}" target="_blank" style="flex-shrink: 0;">
+                    <img src="{{ notizia.file | fotoRidotta(300) }}" alt="Foto della notizia" width="90" height="90" loading="lazy"
+                         style="display: block; width: 90px; height: 90px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                </a>
+                {% endif %}
+                <div style="flex: 1; min-width: 0;">
+                    <p style="margin: 0 0 5px 0; color: #0066cc; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
+                        {{ data[2] | int }} {{ mesi[(data[1] | int) - 1] }} {{ data[0] }}
+                    </p>
+                    <p class="notizia-testo" style="margin: 0; color: #444; font-size: 0.95rem; line-height: 1.5; white-space: pre-line;">{{ notizia.testo }}</p>
+                    <button type="button" class="notizia-altro" hidden>Leggi tutto</button>
                 </div>
+            </div>
+            {% endif %}
+            {% endeach %}
+        </div>
+        {% endif %}
+
+        <div class="fb-container" style="flex: 1; min-width: 300px; max-width: 450px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; background: #fff;">
+            <div style="display: flex; align-items: center; gap: 15px; padding: 20px;">
+                <img src="/img/favicon.png" alt="Logo AMO" width="60" height="60" style="flex-shrink: 0; border-radius: 8px; border: 1px solid #eee;">
+                <div>
+                    <strong style="display: block; color: #004a99; font-size: 1.1rem; line-height: 1.3;">Associazione Malati Oncologici ODV Carpi</strong>
+                    <span style="color: #555; font-size: 0.9rem;">Pagina Facebook ufficiale</span>
+                </div>
+            </div>
+            <div style="padding: 15px 20px; background: #f9f9f9; border-top: 1px solid #eee; text-align: center;">
+                <a href="https://www.facebook.com/amo.carpi" target="_blank" rel="noopener"
+                   style="display: inline-flex; align-items: center; gap: 10px; background: #004a99; color: white; padding: 10px 20px; border-radius: 8px; font-size: 1rem; font-weight: bold; text-decoration: none;">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    Segui la Pagina
+                </a>
+            </div>
+        </div>
 
         <div class="giornalino-container" style="width: 100%; background: #fff; border: 2px solid #004a99; border-radius: 15px; padding: 20px; box-sizing: border-box; text-align: center; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
             <h4 style="margin: 0 0 15px 0; color: #004a99; text-transform: uppercase; font-weight: 800; font-size: 1.1rem; letter-spacing: 1px;">
-                NotiziAMO 04/2026
+                {{ giornalino.titolo }}
             </h4>
-            <p style="font-size: 0.9rem; color: #555; margin-bottom: 20px;"> È disponibile il numero speciale per i 30 anni di <strong>AMO</strong>.</p>
-             <a href="/img/in_primo_piano/NOTIZIAMO_APRILE_2026.pdf"
+            {% if giornalino.testo %}
+            <p style="font-size: 0.9rem; color: #555; margin-bottom: 20px;">{{ giornalino.testo | safe }}</p>
+            {% endif %}
+             <a href="{{ giornalino.pdf }}"
                 target="_blank"
                 onmouseover="this.style.backgroundColor='#3a6ad4'; this.style.transform='scale(1.05)';"
                 onmouseout="this.style.backgroundColor='#416fc8'; this.style.transform='scale(1)';"
@@ -174,10 +209,12 @@ document.addEventListener("amo-consenso", function(e) {
         </div>
         {% endif %}
 
+        {% if datiPrimoPiano.foto %}
         <div style="padding: 0 15px; background-color: #fff;">
-            <img src="/img/in_primo_piano/foto.jpg" alt="In primo piano"
+            <img src="{{ datiPrimoPiano.foto | fotoRidotta(1300) }}" alt="In primo piano"
                  style="width: 100%; border-radius: 12px; display: block; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
         </div>
+        {% endif %}
 
         {% if datiPrimoPiano.testo %}
         <div style="padding: 20px; text-align: center; background-color: #fff;">
@@ -190,3 +227,25 @@ document.addEventListener("amo-consenso", function(e) {
 
 </div>
 </section>
+
+<script>
+// "Leggi tutto" compare solo sotto le notizie il cui testo supera le 4 righe
+// (si ricontrolla quando cambia la larghezza, ad esempio ruotando il telefono)
+const testiNotizie = document.querySelectorAll(".notizia-testo");
+function mostraLeggiTutto() {
+    testiNotizie.forEach(function(testo) {
+        if (!testo.classList.contains("aperta")) {
+            testo.nextElementSibling.hidden = testo.scrollHeight - testo.clientHeight < 2;
+        }
+    });
+}
+testiNotizie.forEach(function(testo) {
+    const pulsante = testo.nextElementSibling;
+    pulsante.addEventListener("click", function() {
+        const aperta = testo.classList.toggle("aperta");
+        pulsante.textContent = aperta ? "Mostra meno" : "Leggi tutto";
+    });
+});
+mostraLeggiTutto();
+window.addEventListener("resize", mostraLeggiTutto);
+</script>

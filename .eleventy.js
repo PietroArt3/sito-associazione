@@ -1,5 +1,5 @@
-const fs = require("fs");
 const path = require("path");
+const Image = require("@11ty/eleventy-img").default;
 
 module.exports = function(eleventyConfig) {
     // 1. Copia delle cartelle (Pass-through)
@@ -9,37 +9,22 @@ module.exports = function(eleventyConfig) {
     });
     eleventyConfig.addPassthroughCopy("doc");
 
-    // 2. Definizione dei Dati Globali (Primo Piano)
-    eleventyConfig.addGlobalData("datiPrimoPiano", () => {
-        // Usiamo process.cwd() per essere sicuri di partire dalla cartella principale
-        const percorsoCartella = path.join(process.cwd(), "img", "in_primo_piano");
-
-        const fileTitolo = path.join(percorsoCartella, "titolo.txt");
-        const fileTesto = path.join(percorsoCartella, "testo.txt");
-
-        let contenutoTitolo = null;
-        let contenutoTesto = null;
-
+    // 2. Foto caricate dal pannello (Pages CMS)
+    // Le foto fatte col telefono pesano diversi MB: in homepage se ne usa una copia rimpicciolita.
+    // Se la foto non si riesce a elaborare si usa l'originale, così la pubblicazione non si blocca.
+    eleventyConfig.addAsyncFilter("fotoRidotta", async function(percorso, larghezza) {
         try {
-            if (fs.existsSync(fileTitolo)) {
-                contenutoTitolo = fs.readFileSync(fileTitolo, "utf8").trim();
-                console.log("✅ Titolo trovato!");
-            } else {
-                console.log("❌ Titolo NON trovato in:", fileTitolo);
-            }
-
-            if (fs.existsSync(fileTesto)) {
-                contenutoTesto = fs.readFileSync(fileTesto, "utf8").trim();
-                console.log("✅ Testo trovato!");
-            }
+            const risultato = await Image(path.join(process.cwd(), percorso), {
+                widths: [larghezza],
+                formats: ["webp"],
+                outputDir: path.join(process.cwd(), "public", "img", "ridotte"),
+                urlPath: "/img/ridotte/"
+            });
+            return risultato.webp[0].url;
         } catch (err) {
-            console.log("⚠️ Errore durante la lettura dei file .txt:", err);
+            console.log("⚠️ Impossibile rimpicciolire la foto, uso l'originale:", percorso, err.message);
+            return percorso;
         }
-
-        return {
-            titolo: contenutoTitolo,
-            testo: contenutoTesto
-        };
     });
 
     // 3. Configurazione Percorsi Input/Output

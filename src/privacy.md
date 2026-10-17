@@ -47,13 +47,11 @@ I cookie sono piccoli file di testo che vengono inviati dal sito web visitato da
 
 #### Cookie e strumenti utilizzati sul presente sito
 
-Il presente sito non installa direttamente cookie di profilazione. Per ricordare la scelta espressa dall’utente tramite il banner dei cookie viene utilizzata la memoria locale del browser (localStorage): si tratta di uno strumento tecnico, per il quale non è richiesto il consenso, e la scelta viene conservata per 6 mesi.
+Il presente sito non installa cookie di profilazione e non consente a terze parti di installarne.
 
 **Statistiche di visita.** Per rilevare gli accessi alle pagine il sito utilizza il servizio di statistica Umami (umami.is), che non utilizza cookie e raccoglie i dati solo in forma aggregata e anonima, senza identificare né tracciare i singoli utenti.
 
-**Bacheca Facebook (cookie di terze parti).** La pagina iniziale può mostrare la bacheca della pagina Facebook di AMO, un contenuto fornito da Meta Platforms Ireland Ltd. Il caricamento di questo contenuto comporta la comunicazione a Meta di dati di navigazione (ad esempio l’indirizzo IP) e l’installazione, da parte di Meta, di cookie di terze parti, anche di profilazione. Per questo motivo la bacheca viene caricata solo se l’utente ha espresso il proprio consenso tramite il banner mostrato alla prima visita o tramite il pulsante presente al posto della bacheca. In mancanza di consenso il contenuto non viene caricato e nessun cookie di terze parti viene installato. Per maggiori informazioni si rimanda all’[informativa sui cookie di Meta](https://www.facebook.com/privacy/policies/cookies/).
-
-**Come modificare o revocare il consenso.** La scelta può essere modificata in qualsiasi momento tramite il link “Preferenze cookie” presente in fondo a ogni pagina del sito. I cookie eventualmente già installati da Meta possono essere rimossi dalle impostazioni del browser, come indicato di seguito.
+**Collegamento a Facebook.** La pagina iniziale contiene un semplice collegamento alla pagina Facebook di AMO: sul sito non viene caricato alcun contenuto fornito da Meta Platforms Ireland Ltd e non viene installato alcun cookie di terze parti. Se l’utente sceglie di aprire il collegamento viene indirizzato al sito di Facebook, dove si applica l’[informativa sui cookie di Meta](https://www.facebook.com/privacy/policies/cookies/).
 
 #### Come si cancellano i cookie
 

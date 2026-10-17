@@ -1,0 +1,78 @@
+# Pannello per aggiornare la homepage dal telefono con Pages CMS (https://app.pagescms.org).
+# Da qui si possono modificare solo tre cose: Ultime Notizie, In primo piano e Giornalino.
+
+media:
+  label: File caricati
+  input: img/in_primo_piano
+  output: /img/in_primo_piano
+  extensions: [jpg, jpeg, png, webp, pdf]
+  rename: random
+
+content:
+  - name: notizie
+    label: Ultime Notizie
+    description: In homepage compaiono solo le 3 notizie più recenti.
+    type: collection
+    path: src/_data/notizie
+    filename:
+      template: "{year}-{month}-{day}-{hour}{minute}{second}.json"
+      field: false
+    subfolders: false
+    operations:
+      rename: false
+    view:
+      primary: testo
+      fields: [testo, date]
+    fields:
+      - name: file
+        label: Foto o PDF
+        type: file
+        options:
+          extensions: [jpg, jpeg, png, webp, pdf]
+      - name: testo
+        label: Testo
+        type: text
+        required: true
+
+  - name: primo-piano
+    label: In primo piano
+    type: file
+    path: src/_data/datiPrimoPiano.json
+    operations:
+      delete: false
+    fields:
+      - name: titolo
+        label: Titolo
+        type: string
+      - name: foto
+        label: Foto
+        type: image
+        options:
+          extensions: [jpg, jpeg, png, webp]
+      - name: testo
+        label: Testo
+        type: text
+
+  - name: giornalino
+    label: Giornalino
+    type: file
+    path: src/_data/giornalino.json
+    operations:
+      delete: false
+    fields:
+      - name: titolo
+        label: Titolo
+        type: string
+        required: true
+      - name: testo
+        label: Testo
+        type: text
+      - name: pdf
+        label: PDF del giornalino
+        type: file
+        required: true
+        options:
+          extensions: [pdf]
+
+settings:
+  hide: true
