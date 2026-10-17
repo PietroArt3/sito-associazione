@@ -8,8 +8,9 @@ description: "Sostieni AMO Carpi con una donazione, diventando socio o devolvend
 
 Per sostenere AMO puoi fare una donazione presso la nostra segreteria al piano terra dell’Ospedale Ramazzini di Carpi, oppure tramite versamento bancario.
 
-<div style="display: inline-block; padding: 8px 20px; background: #e1f0ff; color: #004a99; border-radius: 50px; font-weight: bold; margin-bottom: 30px;">
-    ✨ Le offerte sono deducibili dal proprio reddito
+<div style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 20px; background: #e1f0ff; color: #004a99; border-radius: 50px; font-weight: bold; margin-bottom: 30px;">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" style="flex-shrink: 0;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+    Le offerte sono deducibili dal proprio reddito
 </div>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 40px;">
@@ -70,7 +71,7 @@ Basta riportare il codice fiscale:
 </div>
 </div>
 
-<img src="/img/5permille.jpg" alt="Sostieni AMO" class="donazione-img" width="960" height="364" loading="lazy">
+<img src="/img/5x1000.jpg" alt="Devolvi il 5x1000 ad AMO: codice fiscale 90014880364" class="donazione-img" width="1200" height="455" loading="lazy">
 
 <script>
 function copiaTesto(idElemento, btn) {
